@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+.clearfix{*zoom: 1}
+
+.top menu li, .icon, .service-nav ul li, .footer nav ul li, .service article, .video-block article, .catalog article, .txt-main a, .service-nav article a, .top-nav ul li, .head-motor, .motor-premium article, .btn, .hed-card, .articul, .volum, .b-card .price, .bt-bsk, .slide-main, .item{
+	zoom:1; 
+	*display:inline; 
+}

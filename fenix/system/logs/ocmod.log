@@ -1,0 +1,2655 @@
+2015-06-22 4:13:33 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 30
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 123
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 129
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 169
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 115
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+2015-06-22 4:15:52 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 30
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 123
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 129
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 169
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 115
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+2015-06-22 4:17:50 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 30
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 123
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 129
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 169
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 115
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+2015-06-22 4:27:01 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 30
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 146
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 152
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 192
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 138
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+2015-06-22 4:29:53 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 30
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 169
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 175
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 215
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 161
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+2015-06-22 4:31:37 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 30
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 169
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 175
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 215
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 161
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+2015-06-22 4:31:53 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 30
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 169
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 175
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 215
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 161
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+2015-06-22 20:40:43 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 31
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 169
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 175
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 215
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 161
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+2015-06-22 21:19:38 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 31
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 184
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 190
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 230
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 176
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+2015-06-22 21:19:42 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 31
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 184
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 190
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 230
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 176
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+2015-06-24 6:56:38 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 31
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 184
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 190
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 230
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 176
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+2015-06-26 6:35:22 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 31
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 184
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 190
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 230
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 176
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+2015-06-26 12:28:15 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 31
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 184
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 190
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 230
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 176
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+MOD: Seo Pro for oc2011+
+FILE: admin/controller/catalog/product.php
+CODE: $data['entry_recurring'] = $this->language->get('entry_recurring');
+LINE: 598
+CODE: $this->load->model('catalog/category');
+LINE: 1057
+REGEX: ~		\$this\-\>response\-\>setOutput\(json_encode\(\$json\)\);
+	\}
+~
+LINE: 1474
+FILE: admin/controller/sale/order.php
+CODE: curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+LINE: 45
+LINE: 100
+LINE: 155
+LINE: 192
+LINE: 1418
+LINE: 2209
+FILE: admin/controller/setting/setting.php
+CODE: $data['entry_google_analytics'] = $this->language->get('entry_google_analytics');
+LINE: 158
+CODE: $data['help_google_analytics'] = $this->language->get('help_google_analytics');
+LINE: 227
+CODE: $data['config_seo_url'] = $this->config->get('config_seo_url');
+LINE: 1224
+FILE: admin/language/english/catalog/product.php
+CODE: $_['entry_recurring']        = 'Recurring Profile';
+LINE: 82
+FILE: admin/language/english/setting/setting.php
+CODE: $_['text_smtp']                        = 'SMTP';
+LINE: 22
+CODE: $_['entry_seo_url']                    = 'Use SEO URLs';
+LINE: 123
+CODE: $_['help_google_analytics']            = 'Login to your <a h
+LINE: 202
+CODE: public function getTotalCategoriesByLayoutId($layout_id)
+LINE: 342
+FILE: admin/model/catalog/product.php
+CODE: if (isset($data['product_category'])
+LINE: 82
+CODE: if (isset($data['product_category']))
+LINE: 231
+CODE: return $product_layout_data;
+LINE: 605
+CODE: <input type="hidden" name="manufacturer_id" value="<?php echo $manufacturer_id; ?>" />
+LINE: 430
+FILE: admin/view/template/setting/setting.tpl
+CODE: <input type="radio" name="config_seo_url" value="0" />
+LINE: 1421
+FILE: catalog/controller/common/header.php
+CODE: $data['name'] = $this->config->get('config_name');
+LINE: 61
+CODE: return $this->load->view('default/template/common/header.tpl', $data);
+LINE: 214
+FILE: catalog/controller/common/home.php
+CODE: $this->document->addLink(HTTP_SERVER, 'canonical');
+LINE: 8
+FILE: catalog/controller/common/language.php
+CODE: $data['redirect'] = $this->url->link('common/home');
+LINE: 28
+CODE: $data['redirect'] = $this->url->link($route, $url, $this->request->server['HTTPS']);
+LINE: 46
+REGEX: ~		if \(isset\(\$this\-\>request\-\>post\['redirect'\]\)\) \{
+			\$this\-\>response\-\>redirect\(\$this\-\>request\-\>post\['redirect'\]\);~
+LINE: 64
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 28
+FILE: catalog/view/theme/default/template/common/language.tpl
+CODE: <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+LINE: 18
+REGEX: ~if \(isset\(\$this\-\>request\-\>get\['route'\]\)\) \{
+			\$this\-\>document\-\>addLink\(\$this\-\>url\-\>link\('common/home'\), 'canonical'\);
+		\}~
+LINE: 8
+CODE: $this->response->setOutput($this->load->view('default/template/common/home.tpl', $data));
+LINE: 46
+----------------------------------------------------------------
+2015-06-29 10:42:28 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 31
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 184
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 190
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 230
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 176
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+MOD: Seo Pro for oc2011+
+FILE: admin/controller/catalog/product.php
+CODE: $data['entry_recurring'] = $this->language->get('entry_recurring');
+LINE: 598
+CODE: $this->load->model('catalog/category');
+LINE: 1057
+REGEX: ~		\$this\-\>response\-\>setOutput\(json_encode\(\$json\)\);
+	\}
+~
+LINE: 1474
+FILE: admin/controller/sale/order.php
+CODE: curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+LINE: 45
+LINE: 100
+LINE: 155
+LINE: 192
+LINE: 1418
+LINE: 2209
+FILE: admin/controller/setting/setting.php
+CODE: $data['entry_google_analytics'] = $this->language->get('entry_google_analytics');
+LINE: 158
+CODE: $data['help_google_analytics'] = $this->language->get('help_google_analytics');
+LINE: 227
+CODE: $data['config_seo_url'] = $this->config->get('config_seo_url');
+LINE: 1224
+FILE: admin/language/english/catalog/product.php
+CODE: $_['entry_recurring']        = 'Recurring Profile';
+LINE: 82
+FILE: admin/language/english/setting/setting.php
+CODE: $_['text_smtp']                        = 'SMTP';
+LINE: 22
+CODE: $_['entry_seo_url']                    = 'Use SEO URLs';
+LINE: 123
+CODE: $_['help_google_analytics']            = 'Login to your <a h
+LINE: 202
+CODE: public function getTotalCategoriesByLayoutId($layout_id)
+LINE: 342
+FILE: admin/model/catalog/product.php
+CODE: if (isset($data['product_category'])
+LINE: 82
+CODE: if (isset($data['product_category']))
+LINE: 231
+CODE: return $product_layout_data;
+LINE: 605
+CODE: <input type="hidden" name="manufacturer_id" value="<?php echo $manufacturer_id; ?>" />
+LINE: 430
+FILE: admin/view/template/setting/setting.tpl
+CODE: <input type="radio" name="config_seo_url" value="0" />
+LINE: 1421
+FILE: catalog/controller/common/header.php
+CODE: $data['name'] = $this->config->get('config_name');
+LINE: 74
+CODE: return $this->load->view('default/template/common/header.tpl', $data);
+LINE: 227
+FILE: catalog/controller/common/home.php
+CODE: $this->document->addLink(HTTP_SERVER, 'canonical');
+LINE: 8
+FILE: catalog/controller/common/language.php
+CODE: $data['redirect'] = $this->url->link('common/home');
+LINE: 28
+CODE: $data['redirect'] = $this->url->link($route, $url, $this->request->server['HTTPS']);
+LINE: 46
+REGEX: ~		if \(isset\(\$this\-\>request\-\>post\['redirect'\]\)\) \{
+			\$this\-\>response\-\>redirect\(\$this\-\>request\-\>post\['redirect'\]\);~
+LINE: 64
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 28
+FILE: catalog/view/theme/default/template/common/language.tpl
+CODE: <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+LINE: 18
+REGEX: ~if \(isset\(\$this\-\>request\-\>get\['route'\]\)\) \{
+			\$this\-\>document\-\>addLink\(\$this\-\>url\-\>link\('common/home'\), 'canonical'\);
+		\}~
+LINE: 8
+CODE: $this->response->setOutput($this->load->view('default/template/common/home.tpl', $data));
+LINE: 46
+----------------------------------------------------------------
+2015-06-29 10:42:45 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 31
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 184
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 190
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 230
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 176
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+MOD: Seo Pro for oc2011+
+FILE: admin/controller/catalog/product.php
+CODE: $data['entry_recurring'] = $this->language->get('entry_recurring');
+LINE: 598
+CODE: $this->load->model('catalog/category');
+LINE: 1057
+REGEX: ~		\$this\-\>response\-\>setOutput\(json_encode\(\$json\)\);
+	\}
+~
+LINE: 1474
+FILE: admin/controller/sale/order.php
+CODE: curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+LINE: 45
+LINE: 100
+LINE: 155
+LINE: 192
+LINE: 1418
+LINE: 2209
+FILE: admin/controller/setting/setting.php
+CODE: $data['entry_google_analytics'] = $this->language->get('entry_google_analytics');
+LINE: 158
+CODE: $data['help_google_analytics'] = $this->language->get('help_google_analytics');
+LINE: 227
+CODE: $data['config_seo_url'] = $this->config->get('config_seo_url');
+LINE: 1224
+FILE: admin/language/english/catalog/product.php
+CODE: $_['entry_recurring']        = 'Recurring Profile';
+LINE: 82
+FILE: admin/language/english/setting/setting.php
+CODE: $_['text_smtp']                        = 'SMTP';
+LINE: 22
+CODE: $_['entry_seo_url']                    = 'Use SEO URLs';
+LINE: 123
+CODE: $_['help_google_analytics']            = 'Login to your <a h
+LINE: 202
+CODE: public function getTotalCategoriesByLayoutId($layout_id)
+LINE: 342
+FILE: admin/model/catalog/product.php
+CODE: if (isset($data['product_category'])
+LINE: 82
+CODE: if (isset($data['product_category']))
+LINE: 231
+CODE: return $product_layout_data;
+LINE: 605
+CODE: <input type="hidden" name="manufacturer_id" value="<?php echo $manufacturer_id; ?>" />
+LINE: 430
+FILE: admin/view/template/setting/setting.tpl
+CODE: <input type="radio" name="config_seo_url" value="0" />
+LINE: 1421
+FILE: catalog/controller/common/header.php
+CODE: $data['name'] = $this->config->get('config_name');
+LINE: 72
+CODE: return $this->load->view('default/template/common/header.tpl', $data);
+LINE: 225
+FILE: catalog/controller/common/home.php
+CODE: $this->document->addLink(HTTP_SERVER, 'canonical');
+LINE: 8
+FILE: catalog/controller/common/language.php
+CODE: $data['redirect'] = $this->url->link('common/home');
+LINE: 28
+CODE: $data['redirect'] = $this->url->link($route, $url, $this->request->server['HTTPS']);
+LINE: 46
+REGEX: ~		if \(isset\(\$this\-\>request\-\>post\['redirect'\]\)\) \{
+			\$this\-\>response\-\>redirect\(\$this\-\>request\-\>post\['redirect'\]\);~
+LINE: 64
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 28
+FILE: catalog/view/theme/default/template/common/language.tpl
+CODE: <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+LINE: 18
+REGEX: ~if \(isset\(\$this\-\>request\-\>get\['route'\]\)\) \{
+			\$this\-\>document\-\>addLink\(\$this\-\>url\-\>link\('common/home'\), 'canonical'\);
+		\}~
+LINE: 8
+CODE: $this->response->setOutput($this->load->view('default/template/common/home.tpl', $data));
+LINE: 46
+----------------------------------------------------------------
+2015-06-29 10:43:21 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 31
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 184
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 190
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 230
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 176
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+MOD: Seo Pro for oc2011+
+FILE: admin/controller/catalog/product.php
+CODE: $data['entry_recurring'] = $this->language->get('entry_recurring');
+LINE: 598
+CODE: $this->load->model('catalog/category');
+LINE: 1057
+REGEX: ~		\$this\-\>response\-\>setOutput\(json_encode\(\$json\)\);
+	\}
+~
+LINE: 1474
+FILE: admin/controller/sale/order.php
+CODE: curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+LINE: 45
+LINE: 100
+LINE: 155
+LINE: 192
+LINE: 1418
+LINE: 2209
+FILE: admin/controller/setting/setting.php
+CODE: $data['entry_google_analytics'] = $this->language->get('entry_google_analytics');
+LINE: 158
+CODE: $data['help_google_analytics'] = $this->language->get('help_google_analytics');
+LINE: 227
+CODE: $data['config_seo_url'] = $this->config->get('config_seo_url');
+LINE: 1224
+FILE: admin/language/english/catalog/product.php
+CODE: $_['entry_recurring']        = 'Recurring Profile';
+LINE: 82
+FILE: admin/language/english/setting/setting.php
+CODE: $_['text_smtp']                        = 'SMTP';
+LINE: 22
+CODE: $_['entry_seo_url']                    = 'Use SEO URLs';
+LINE: 123
+CODE: $_['help_google_analytics']            = 'Login to your <a h
+LINE: 202
+CODE: public function getTotalCategoriesByLayoutId($layout_id)
+LINE: 342
+FILE: admin/model/catalog/product.php
+CODE: if (isset($data['product_category'])
+LINE: 82
+CODE: if (isset($data['product_category']))
+LINE: 231
+CODE: return $product_layout_data;
+LINE: 605
+CODE: <input type="hidden" name="manufacturer_id" value="<?php echo $manufacturer_id; ?>" />
+LINE: 430
+FILE: admin/view/template/setting/setting.tpl
+CODE: <input type="radio" name="config_seo_url" value="0" />
+LINE: 1421
+FILE: catalog/controller/common/header.php
+CODE: $data['name'] = $this->config->get('config_name');
+LINE: 72
+CODE: return $this->load->view('default/template/common/header.tpl', $data);
+LINE: 225
+FILE: catalog/controller/common/home.php
+CODE: $this->document->addLink(HTTP_SERVER, 'canonical');
+LINE: 8
+FILE: catalog/controller/common/language.php
+CODE: $data['redirect'] = $this->url->link('common/home');
+LINE: 28
+CODE: $data['redirect'] = $this->url->link($route, $url, $this->request->server['HTTPS']);
+LINE: 46
+REGEX: ~		if \(isset\(\$this\-\>request\-\>post\['redirect'\]\)\) \{
+			\$this\-\>response\-\>redirect\(\$this\-\>request\-\>post\['redirect'\]\);~
+LINE: 64
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 28
+FILE: catalog/view/theme/default/template/common/language.tpl
+CODE: <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+LINE: 18
+REGEX: ~if \(isset\(\$this\-\>request\-\>get\['route'\]\)\) \{
+			\$this\-\>document\-\>addLink\(\$this\-\>url\-\>link\('common/home'\), 'canonical'\);
+		\}~
+LINE: 8
+CODE: $this->response->setOutput($this->load->view('default/template/common/home.tpl', $data));
+LINE: 46
+----------------------------------------------------------------
+2015-06-29 10:43:42 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 31
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 184
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 190
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 230
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 176
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+MOD: Seo Pro for oc2011+
+FILE: admin/controller/catalog/product.php
+CODE: $data['entry_recurring'] = $this->language->get('entry_recurring');
+LINE: 598
+CODE: $this->load->model('catalog/category');
+LINE: 1057
+REGEX: ~		\$this\-\>response\-\>setOutput\(json_encode\(\$json\)\);
+	\}
+~
+LINE: 1474
+FILE: admin/controller/sale/order.php
+CODE: curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+LINE: 45
+LINE: 100
+LINE: 155
+LINE: 192
+LINE: 1418
+LINE: 2209
+FILE: admin/controller/setting/setting.php
+CODE: $data['entry_google_analytics'] = $this->language->get('entry_google_analytics');
+LINE: 158
+CODE: $data['help_google_analytics'] = $this->language->get('help_google_analytics');
+LINE: 227
+CODE: $data['config_seo_url'] = $this->config->get('config_seo_url');
+LINE: 1224
+FILE: admin/language/english/catalog/product.php
+CODE: $_['entry_recurring']        = 'Recurring Profile';
+LINE: 82
+FILE: admin/language/english/setting/setting.php
+CODE: $_['text_smtp']                        = 'SMTP';
+LINE: 22
+CODE: $_['entry_seo_url']                    = 'Use SEO URLs';
+LINE: 123
+CODE: $_['help_google_analytics']            = 'Login to your <a h
+LINE: 202
+CODE: public function getTotalCategoriesByLayoutId($layout_id)
+LINE: 342
+FILE: admin/model/catalog/product.php
+CODE: if (isset($data['product_category'])
+LINE: 82
+CODE: if (isset($data['product_category']))
+LINE: 231
+CODE: return $product_layout_data;
+LINE: 605
+CODE: <input type="hidden" name="manufacturer_id" value="<?php echo $manufacturer_id; ?>" />
+LINE: 430
+FILE: admin/view/template/setting/setting.tpl
+CODE: <input type="radio" name="config_seo_url" value="0" />
+LINE: 1421
+FILE: catalog/controller/common/header.php
+CODE: $data['name'] = $this->config->get('config_name');
+LINE: 72
+CODE: return $this->load->view('default/template/common/header.tpl', $data);
+LINE: 225
+FILE: catalog/controller/common/home.php
+CODE: $this->document->addLink(HTTP_SERVER, 'canonical');
+LINE: 8
+FILE: catalog/controller/common/language.php
+CODE: $data['redirect'] = $this->url->link('common/home');
+LINE: 28
+CODE: $data['redirect'] = $this->url->link($route, $url, $this->request->server['HTTPS']);
+LINE: 46
+REGEX: ~		if \(isset\(\$this\-\>request\-\>post\['redirect'\]\)\) \{
+			\$this\-\>response\-\>redirect\(\$this\-\>request\-\>post\['redirect'\]\);~
+LINE: 64
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 28
+FILE: catalog/view/theme/default/template/common/language.tpl
+CODE: <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+LINE: 18
+REGEX: ~if \(isset\(\$this\-\>request\-\>get\['route'\]\)\) \{
+			\$this\-\>document\-\>addLink\(\$this\-\>url\-\>link\('common/home'\), 'canonical'\);
+		\}~
+LINE: 8
+CODE: $this->response->setOutput($this->load->view('default/template/common/home.tpl', $data));
+LINE: 46
+----------------------------------------------------------------
+2015-06-29 10:44:23 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 31
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 184
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 190
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 230
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 176
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+MOD: Seo Pro for oc2011+
+FILE: admin/controller/catalog/product.php
+CODE: $data['entry_recurring'] = $this->language->get('entry_recurring');
+LINE: 598
+CODE: $this->load->model('catalog/category');
+LINE: 1057
+REGEX: ~		\$this\-\>response\-\>setOutput\(json_encode\(\$json\)\);
+	\}
+~
+LINE: 1474
+FILE: admin/controller/sale/order.php
+CODE: curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+LINE: 45
+LINE: 100
+LINE: 155
+LINE: 192
+LINE: 1418
+LINE: 2209
+FILE: admin/controller/setting/setting.php
+CODE: $data['entry_google_analytics'] = $this->language->get('entry_google_analytics');
+LINE: 158
+CODE: $data['help_google_analytics'] = $this->language->get('help_google_analytics');
+LINE: 227
+CODE: $data['config_seo_url'] = $this->config->get('config_seo_url');
+LINE: 1224
+FILE: admin/language/english/catalog/product.php
+CODE: $_['entry_recurring']        = 'Recurring Profile';
+LINE: 82
+FILE: admin/language/english/setting/setting.php
+CODE: $_['text_smtp']                        = 'SMTP';
+LINE: 22
+CODE: $_['entry_seo_url']                    = 'Use SEO URLs';
+LINE: 123
+CODE: $_['help_google_analytics']            = 'Login to your <a h
+LINE: 202
+CODE: public function getTotalCategoriesByLayoutId($layout_id)
+LINE: 342
+FILE: admin/model/catalog/product.php
+CODE: if (isset($data['product_category'])
+LINE: 82
+CODE: if (isset($data['product_category']))
+LINE: 231
+CODE: return $product_layout_data;
+LINE: 605
+CODE: <input type="hidden" name="manufacturer_id" value="<?php echo $manufacturer_id; ?>" />
+LINE: 430
+FILE: admin/view/template/setting/setting.tpl
+CODE: <input type="radio" name="config_seo_url" value="0" />
+LINE: 1421
+FILE: catalog/controller/common/header.php
+CODE: $data['name'] = $this->config->get('config_name');
+LINE: 72
+CODE: return $this->load->view('default/template/common/header.tpl', $data);
+LINE: 225
+FILE: catalog/controller/common/home.php
+CODE: $this->document->addLink(HTTP_SERVER, 'canonical');
+LINE: 8
+FILE: catalog/controller/common/language.php
+CODE: $data['redirect'] = $this->url->link('common/home');
+LINE: 28
+CODE: $data['redirect'] = $this->url->link($route, $url, $this->request->server['HTTPS']);
+LINE: 46
+REGEX: ~		if \(isset\(\$this\-\>request\-\>post\['redirect'\]\)\) \{
+			\$this\-\>response\-\>redirect\(\$this\-\>request\-\>post\['redirect'\]\);~
+LINE: 64
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 28
+FILE: catalog/view/theme/default/template/common/language.tpl
+CODE: <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+LINE: 18
+REGEX: ~if \(isset\(\$this\-\>request\-\>get\['route'\]\)\) \{
+			\$this\-\>document\-\>addLink\(\$this\-\>url\-\>link\('common/home'\), 'canonical'\);
+		\}~
+LINE: 8
+CODE: $this->response->setOutput($this->load->view('default/template/common/home.tpl', $data));
+LINE: 46
+----------------------------------------------------------------
+2015-06-30 12:48:25 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 31
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 184
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 190
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 230
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 176
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+MOD: Seo Pro for oc2011+
+FILE: admin/controller/catalog/product.php
+CODE: $data['entry_recurring'] = $this->language->get('entry_recurring');
+LINE: 598
+CODE: $this->load->model('catalog/category');
+LINE: 1057
+REGEX: ~		\$this\-\>response\-\>setOutput\(json_encode\(\$json\)\);
+	\}
+~
+LINE: 1474
+FILE: admin/controller/sale/order.php
+CODE: curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+LINE: 45
+LINE: 100
+LINE: 155
+LINE: 192
+LINE: 1418
+LINE: 2209
+FILE: admin/controller/setting/setting.php
+CODE: $data['entry_google_analytics'] = $this->language->get('entry_google_analytics');
+LINE: 158
+CODE: $data['help_google_analytics'] = $this->language->get('help_google_analytics');
+LINE: 227
+CODE: $data['config_seo_url'] = $this->config->get('config_seo_url');
+LINE: 1224
+FILE: admin/language/english/catalog/product.php
+CODE: $_['entry_recurring']        = 'Recurring Profile';
+LINE: 82
+FILE: admin/language/english/setting/setting.php
+CODE: $_['text_smtp']                        = 'SMTP';
+LINE: 22
+CODE: $_['entry_seo_url']                    = 'Use SEO URLs';
+LINE: 123
+CODE: $_['help_google_analytics']            = 'Login to your <a h
+LINE: 202
+CODE: public function getTotalCategoriesByLayoutId($layout_id)
+LINE: 342
+FILE: admin/model/catalog/product.php
+CODE: if (isset($data['product_category'])
+LINE: 82
+CODE: if (isset($data['product_category']))
+LINE: 231
+CODE: return $product_layout_data;
+LINE: 605
+CODE: <input type="hidden" name="manufacturer_id" value="<?php echo $manufacturer_id; ?>" />
+LINE: 430
+FILE: admin/view/template/setting/setting.tpl
+CODE: <input type="radio" name="config_seo_url" value="0" />
+LINE: 1421
+FILE: catalog/controller/common/header.php
+CODE: $data['name'] = $this->config->get('config_name');
+LINE: 72
+CODE: return $this->load->view('default/template/common/header.tpl', $data);
+LINE: 225
+FILE: catalog/controller/common/home.php
+CODE: $this->document->addLink(HTTP_SERVER, 'canonical');
+LINE: 8
+FILE: catalog/controller/common/language.php
+CODE: $data['redirect'] = $this->url->link('common/home');
+LINE: 28
+CODE: $data['redirect'] = $this->url->link($route, $url, $this->request->server['HTTPS']);
+LINE: 46
+REGEX: ~		if \(isset\(\$this\-\>request\-\>post\['redirect'\]\)\) \{
+			\$this\-\>response\-\>redirect\(\$this\-\>request\-\>post\['redirect'\]\);~
+LINE: 64
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 28
+FILE: catalog/view/theme/default/template/common/language.tpl
+CODE: <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+LINE: 18
+REGEX: ~if \(isset\(\$this\-\>request\-\>get\['route'\]\)\) \{
+			\$this\-\>document\-\>addLink\(\$this\-\>url\-\>link\('common/home'\), 'canonical'\);
+		\}~
+LINE: 8
+CODE: $this->response->setOutput($this->load->view('default/template/common/home.tpl', $data));
+LINE: 46
+----------------------------------------------------------------
+2015-06-30 12:52:05 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 31
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 184
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 190
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 230
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 176
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+MOD: Seo Pro for oc2011+
+FILE: admin/controller/catalog/product.php
+CODE: $data['entry_recurring'] = $this->language->get('entry_recurring');
+LINE: 598
+CODE: $this->load->model('catalog/category');
+LINE: 1057
+REGEX: ~		\$this\-\>response\-\>setOutput\(json_encode\(\$json\)\);
+	\}
+~
+LINE: 1474
+FILE: admin/controller/sale/order.php
+CODE: curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+LINE: 45
+LINE: 100
+LINE: 155
+LINE: 192
+LINE: 1418
+LINE: 2209
+FILE: admin/controller/setting/setting.php
+CODE: $data['entry_google_analytics'] = $this->language->get('entry_google_analytics');
+LINE: 158
+CODE: $data['help_google_analytics'] = $this->language->get('help_google_analytics');
+LINE: 227
+CODE: $data['config_seo_url'] = $this->config->get('config_seo_url');
+LINE: 1224
+FILE: admin/language/english/catalog/product.php
+CODE: $_['entry_recurring']        = 'Recurring Profile';
+LINE: 82
+FILE: admin/language/english/setting/setting.php
+CODE: $_['text_smtp']                        = 'SMTP';
+LINE: 22
+CODE: $_['entry_seo_url']                    = 'Use SEO URLs';
+LINE: 123
+CODE: $_['help_google_analytics']            = 'Login to your <a h
+LINE: 202
+CODE: public function getTotalCategoriesByLayoutId($layout_id)
+LINE: 342
+FILE: admin/model/catalog/product.php
+CODE: if (isset($data['product_category'])
+LINE: 82
+CODE: if (isset($data['product_category']))
+LINE: 231
+CODE: return $product_layout_data;
+LINE: 605
+CODE: <input type="hidden" name="manufacturer_id" value="<?php echo $manufacturer_id; ?>" />
+LINE: 430
+FILE: admin/view/template/setting/setting.tpl
+CODE: <input type="radio" name="config_seo_url" value="0" />
+LINE: 1421
+FILE: catalog/controller/common/header.php
+CODE: $data['name'] = $this->config->get('config_name');
+LINE: 72
+CODE: return $this->load->view('default/template/common/header.tpl', $data);
+LINE: 225
+FILE: catalog/controller/common/home.php
+CODE: $this->document->addLink(HTTP_SERVER, 'canonical');
+LINE: 8
+FILE: catalog/controller/common/language.php
+CODE: $data['redirect'] = $this->url->link('common/home');
+LINE: 28
+CODE: $data['redirect'] = $this->url->link($route, $url, $this->request->server['HTTPS']);
+LINE: 46
+REGEX: ~		if \(isset\(\$this\-\>request\-\>post\['redirect'\]\)\) \{
+			\$this\-\>response\-\>redirect\(\$this\-\>request\-\>post\['redirect'\]\);~
+LINE: 64
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 28
+FILE: catalog/view/theme/default/template/common/language.tpl
+CODE: <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+LINE: 18
+REGEX: ~if \(isset\(\$this\-\>request\-\>get\['route'\]\)\) \{
+			\$this\-\>document\-\>addLink\(\$this\-\>url\-\>link\('common/home'\), 'canonical'\);
+		\}~
+LINE: 8
+CODE: $this->response->setOutput($this->load->view('default/template/common/home.tpl', $data));
+LINE: 46
+----------------------------------------------------------------
+2015-06-30 13:09:51 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 31
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 184
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 190
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 230
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 176
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+MOD: Seo Pro for oc2011+
+FILE: admin/controller/catalog/product.php
+CODE: $data['entry_recurring'] = $this->language->get('entry_recurring');
+LINE: 598
+CODE: $this->load->model('catalog/category');
+LINE: 1057
+REGEX: ~		\$this\-\>response\-\>setOutput\(json_encode\(\$json\)\);
+	\}
+~
+LINE: 1474
+FILE: admin/controller/sale/order.php
+CODE: curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+LINE: 45
+LINE: 100
+LINE: 155
+LINE: 192
+LINE: 1418
+LINE: 2209
+FILE: admin/controller/setting/setting.php
+CODE: $data['entry_google_analytics'] = $this->language->get('entry_google_analytics');
+LINE: 158
+CODE: $data['help_google_analytics'] = $this->language->get('help_google_analytics');
+LINE: 227
+CODE: $data['config_seo_url'] = $this->config->get('config_seo_url');
+LINE: 1224
+FILE: admin/language/english/catalog/product.php
+CODE: $_['entry_recurring']        = 'Recurring Profile';
+LINE: 82
+FILE: admin/language/english/setting/setting.php
+CODE: $_['text_smtp']                        = 'SMTP';
+LINE: 22
+CODE: $_['entry_seo_url']                    = 'Use SEO URLs';
+LINE: 123
+CODE: $_['help_google_analytics']            = 'Login to your <a h
+LINE: 202
+CODE: public function getTotalCategoriesByLayoutId($layout_id)
+LINE: 342
+FILE: admin/model/catalog/product.php
+CODE: if (isset($data['product_category'])
+LINE: 82
+CODE: if (isset($data['product_category']))
+LINE: 231
+CODE: return $product_layout_data;
+LINE: 605
+CODE: <input type="hidden" name="manufacturer_id" value="<?php echo $manufacturer_id; ?>" />
+LINE: 430
+FILE: admin/view/template/setting/setting.tpl
+CODE: <input type="radio" name="config_seo_url" value="0" />
+LINE: 1421
+FILE: catalog/controller/common/header.php
+CODE: $data['name'] = $this->config->get('config_name');
+LINE: 72
+CODE: return $this->load->view('default/template/common/header.tpl', $data);
+LINE: 225
+FILE: catalog/controller/common/home.php
+CODE: $this->document->addLink(HTTP_SERVER, 'canonical');
+LINE: 8
+FILE: catalog/controller/common/language.php
+CODE: $data['redirect'] = $this->url->link('common/home');
+LINE: 28
+CODE: $data['redirect'] = $this->url->link($route, $url, $this->request->server['HTTPS']);
+LINE: 46
+REGEX: ~		if \(isset\(\$this\-\>request\-\>post\['redirect'\]\)\) \{
+			\$this\-\>response\-\>redirect\(\$this\-\>request\-\>post\['redirect'\]\);~
+LINE: 64
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 28
+FILE: catalog/view/theme/default/template/common/language.tpl
+CODE: <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+LINE: 18
+REGEX: ~if \(isset\(\$this\-\>request\-\>get\['route'\]\)\) \{
+			\$this\-\>document\-\>addLink\(\$this\-\>url\-\>link\('common/home'\), 'canonical'\);
+		\}~
+LINE: 8
+CODE: $this->response->setOutput($this->load->view('default/template/common/home.tpl', $data));
+LINE: 46
+----------------------------------------------------------------
+2015-06-30 13:10:37 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 35
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 80
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 86
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 31
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 184
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 190
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 230
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 176
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+MOD: Seo Pro for oc2011+
+FILE: admin/controller/catalog/product.php
+CODE: $data['entry_recurring'] = $this->language->get('entry_recurring');
+LINE: 598
+CODE: $this->load->model('catalog/category');
+LINE: 1057
+REGEX: ~		\$this\-\>response\-\>setOutput\(json_encode\(\$json\)\);
+	\}
+~
+LINE: 1474
+FILE: admin/controller/sale/order.php
+CODE: curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+LINE: 45
+LINE: 100
+LINE: 155
+LINE: 192
+LINE: 1418
+LINE: 2209
+FILE: admin/controller/setting/setting.php
+CODE: $data['entry_google_analytics'] = $this->language->get('entry_google_analytics');
+LINE: 158
+CODE: $data['help_google_analytics'] = $this->language->get('help_google_analytics');
+LINE: 227
+CODE: $data['config_seo_url'] = $this->config->get('config_seo_url');
+LINE: 1224
+FILE: admin/language/english/catalog/product.php
+CODE: $_['entry_recurring']        = 'Recurring Profile';
+LINE: 82
+FILE: admin/language/english/setting/setting.php
+CODE: $_['text_smtp']                        = 'SMTP';
+LINE: 22
+CODE: $_['entry_seo_url']                    = 'Use SEO URLs';
+LINE: 123
+CODE: $_['help_google_analytics']            = 'Login to your <a h
+LINE: 202
+CODE: public function getTotalCategoriesByLayoutId($layout_id)
+LINE: 342
+FILE: admin/model/catalog/product.php
+CODE: if (isset($data['product_category'])
+LINE: 82
+CODE: if (isset($data['product_category']))
+LINE: 231
+CODE: return $product_layout_data;
+LINE: 605
+CODE: <input type="hidden" name="manufacturer_id" value="<?php echo $manufacturer_id; ?>" />
+LINE: 430
+FILE: admin/view/template/setting/setting.tpl
+CODE: <input type="radio" name="config_seo_url" value="0" />
+LINE: 1421
+FILE: catalog/controller/common/header.php
+CODE: $data['name'] = $this->config->get('config_name');
+LINE: 72
+CODE: return $this->load->view('default/template/common/header.tpl', $data);
+LINE: 225
+FILE: catalog/controller/common/home.php
+CODE: $this->document->addLink(HTTP_SERVER, 'canonical');
+LINE: 8
+FILE: catalog/controller/common/language.php
+CODE: $data['redirect'] = $this->url->link('common/home');
+LINE: 28
+CODE: $data['redirect'] = $this->url->link($route, $url, $this->request->server['HTTPS']);
+LINE: 46
+REGEX: ~		if \(isset\(\$this\-\>request\-\>post\['redirect'\]\)\) \{
+			\$this\-\>response\-\>redirect\(\$this\-\>request\-\>post\['redirect'\]\);~
+LINE: 64
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 28
+FILE: catalog/view/theme/default/template/common/language.tpl
+CODE: <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+LINE: 18
+REGEX: ~if \(isset\(\$this\-\>request\-\>get\['route'\]\)\) \{
+			\$this\-\>document\-\>addLink\(\$this\-\>url\-\>link\('common/home'\), 'canonical'\);
+		\}~
+LINE: 8
+CODE: $this->response->setOutput($this->load->view('default/template/common/home.tpl', $data));
+LINE: 46
+----------------------------------------------------------------
+2015-07-13 14:28:55 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 38
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 86
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 89
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 31
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 184
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 190
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 230
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 176
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+MOD: Seo Pro for oc2011+
+FILE: admin/controller/catalog/product.php
+CODE: $data['entry_recurring'] = $this->language->get('entry_recurring');
+LINE: 598
+CODE: $this->load->model('catalog/category');
+LINE: 1057
+REGEX: ~		\$this\-\>response\-\>setOutput\(json_encode\(\$json\)\);
+	\}
+~
+LINE: 1474
+FILE: admin/controller/sale/order.php
+CODE: curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+LINE: 45
+LINE: 100
+LINE: 155
+LINE: 192
+LINE: 1418
+LINE: 2209
+FILE: admin/controller/setting/setting.php
+CODE: $data['entry_google_analytics'] = $this->language->get('entry_google_analytics');
+LINE: 158
+CODE: $data['help_google_analytics'] = $this->language->get('help_google_analytics');
+LINE: 227
+CODE: $data['config_seo_url'] = $this->config->get('config_seo_url');
+LINE: 1236
+FILE: admin/language/english/catalog/product.php
+CODE: $_['entry_recurring']        = 'Recurring Profile';
+LINE: 82
+FILE: admin/language/english/setting/setting.php
+CODE: $_['text_smtp']                        = 'SMTP';
+LINE: 22
+CODE: $_['entry_seo_url']                    = 'Use SEO URLs';
+LINE: 123
+CODE: $_['help_google_analytics']            = 'Login to your <a h
+LINE: 202
+CODE: public function getTotalCategoriesByLayoutId($layout_id)
+LINE: 342
+FILE: admin/model/catalog/product.php
+CODE: if (isset($data['product_category'])
+LINE: 82
+CODE: if (isset($data['product_category']))
+LINE: 231
+CODE: return $product_layout_data;
+LINE: 605
+CODE: <input type="hidden" name="manufacturer_id" value="<?php echo $manufacturer_id; ?>" />
+LINE: 430
+FILE: admin/view/template/setting/setting.tpl
+CODE: <input type="radio" name="config_seo_url" value="0" />
+LINE: 1424
+FILE: catalog/controller/common/header.php
+CODE: $data['name'] = $this->config->get('config_name');
+LINE: 75
+CODE: return $this->load->view('default/template/common/header.tpl', $data);
+LINE: 232
+FILE: catalog/controller/common/home.php
+CODE: $this->document->addLink(HTTP_SERVER, 'canonical');
+LINE: 8
+FILE: catalog/controller/common/language.php
+CODE: $data['redirect'] = $this->url->link('common/home');
+LINE: 28
+CODE: $data['redirect'] = $this->url->link($route, $url, $this->request->server['HTTPS']);
+LINE: 46
+REGEX: ~		if \(isset\(\$this\-\>request\-\>post\['redirect'\]\)\) \{
+			\$this\-\>response\-\>redirect\(\$this\-\>request\-\>post\['redirect'\]\);~
+LINE: 64
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 28
+FILE: catalog/view/theme/default/template/common/language.tpl
+CODE: <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+LINE: 18
+REGEX: ~if \(isset\(\$this\-\>request\-\>get\['route'\]\)\) \{
+			\$this\-\>document\-\>addLink\(\$this\-\>url\-\>link\('common/home'\), 'canonical'\);
+		\}~
+LINE: 8
+CODE: $this->response->setOutput($this->load->view('default/template/common/home.tpl', $data));
+LINE: 46
+----------------------------------------------------------------
+2015-09-06 16:50:38 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: News
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+LINE: 33
+FILE: admin/controller/common/menu.php
+CODE: $data['feed'] = $this->url->link('extension/feed', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 131
+FILE: catalog/controller/common/footer.php
+CODE: $data['text_account'] = $this->language->get('text_account');
+LINE: 22
+FILE: catalog/language/english/common/footer.php
+CODE: $_
+LINE: 6
+FILE: catalog/language/russian/common/footer.php
+CODE: $_
+LINE: 6
+FILE: catalog/view/theme/bardahl/template/common/footer.tpl
+CODE: <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+NOT FOUND!
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+LINE: 28
+FILE: catalog/controller/common/seo_url.php
+CODE: if ($url[0] == 'information_id') {
+LINE: 37
+CODE: } elseif (isset($this->request->get['information_id'])) {
+LINE: 61
+CODE: if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+LINE: 115
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+LINE: 41
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id'  && $url[0] != 'category_id' && $url[0] != 'product_id') {
+NOT FOUND!
+FILE: admin/controller/common/dashboard.php
+CODE: function index()
+LINE: 7
+FILE: admin/view/template/common/dashboard.tpl
+CODE: <?php if ($error_install) { ?>
+LINE: 24
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 38
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 86
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 89
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 34
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 196
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 202
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 242
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 188
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+MOD: Seo Pro for oc2011+
+FILE: admin/controller/catalog/product.php
+CODE: $data['entry_recurring'] = $this->language->get('entry_recurring');
+LINE: 600
+CODE: $this->load->model('catalog/category');
+LINE: 1074
+REGEX: ~		\$this\-\>response\-\>setOutput\(json_encode\(\$json\)\);
+	\}
+~
+LINE: 1513
+FILE: admin/controller/sale/order.php
+CODE: curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+LINE: 45
+LINE: 102
+LINE: 159
+LINE: 198
+LINE: 1432
+LINE: 2252
+FILE: admin/controller/setting/setting.php
+CODE: $data['entry_google_analytics'] = $this->language->get('entry_google_analytics');
+LINE: 158
+CODE: $data['help_google_analytics'] = $this->language->get('help_google_analytics');
+LINE: 227
+CODE: $data['config_seo_url'] = $this->config->get('config_seo_url');
+LINE: 1236
+FILE: admin/language/english/catalog/product.php
+CODE: $_['entry_recurring']        = 'Recurring Profile';
+LINE: 82
+FILE: admin/language/english/setting/setting.php
+CODE: $_['text_smtp']                        = 'SMTP';
+LINE: 22
+CODE: $_['entry_seo_url']                    = 'Use SEO URLs';
+LINE: 123
+CODE: $_['help_google_analytics']            = 'Login to your <a h
+LINE: 202
+CODE: public function getTotalCategoriesByLayoutId($layout_id)
+LINE: 342
+FILE: admin/model/catalog/product.php
+CODE: if (isset($data['product_category'])
+LINE: 82
+CODE: if (isset($data['product_category']))
+LINE: 238
+CODE: return $product_layout_data;
+LINE: 620
+CODE: <input type="hidden" name="manufacturer_id" value="<?php echo $manufacturer_id; ?>" />
+LINE: 442
+FILE: admin/view/template/setting/setting.tpl
+CODE: <input type="radio" name="config_seo_url" value="0" />
+LINE: 1424
+FILE: catalog/controller/common/header.php
+CODE: $data['name'] = $this->config->get('config_name');
+LINE: 66
+CODE: return $this->load->view('default/template/common/header.tpl', $data);
+LINE: 263
+FILE: catalog/controller/common/home.php
+CODE: $this->document->addLink(HTTP_SERVER, 'canonical');
+LINE: 8
+FILE: catalog/controller/common/language.php
+CODE: $data['redirect'] = $this->url->link('common/home');
+LINE: 28
+CODE: $data['redirect'] = $this->url->link($route, $url, $this->request->server['HTTPS']);
+LINE: 46
+REGEX: ~		if \(isset\(\$this\-\>request\-\>post\['redirect'\]\)\) \{
+			\$this\-\>response\-\>redirect\(\$this\-\>request\-\>post\['redirect'\]\);~
+LINE: 64
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 28
+FILE: catalog/view/theme/default/template/common/language.tpl
+CODE: <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+LINE: 18
+REGEX: ~if \(isset\(\$this\-\>request\-\>get\['route'\]\)\) \{
+			\$this\-\>document\-\>addLink\(\$this\-\>url\-\>link\('common/home'\), 'canonical'\);
+		\}~
+LINE: 8
+CODE: $this->response->setOutput($this->load->view('default/template/common/home.tpl', $data));
+LINE: 46
+----------------------------------------------------------------
+2015-11-04 14:52:59 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Новости
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+LINE: 33
+FILE: admin/controller/common/menu.php
+CODE: $data['feed'] = $this->url->link('extension/feed', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 131
+FILE: catalog/controller/common/footer.php
+CODE: $data['text_account'] = $this->language->get('text_account');
+LINE: 22
+FILE: catalog/language/english/common/footer.php
+CODE: $_
+LINE: 6
+FILE: catalog/language/russian/common/footer.php
+CODE: $_
+LINE: 6
+FILE: catalog/view/theme/bardahl/template/common/footer.tpl
+CODE: <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+NOT FOUND!
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+LINE: 28
+FILE: catalog/controller/common/seo_url.php
+CODE: if ($url[0] == 'information_id') {
+LINE: 37
+CODE: } elseif (isset($this->request->get['information_id'])) {
+LINE: 61
+CODE: if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+LINE: 115
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+LINE: 41
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id'  && $url[0] != 'category_id' && $url[0] != 'product_id') {
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 38
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 86
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 89
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 34
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 196
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 202
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 242
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 188
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+MOD: Seo Pro for oc2011+
+FILE: admin/controller/catalog/product.php
+CODE: $data['entry_recurring'] = $this->language->get('entry_recurring');
+LINE: 600
+CODE: $this->load->model('catalog/category');
+LINE: 1074
+REGEX: ~		\$this\-\>response\-\>setOutput\(json_encode\(\$json\)\);
+	\}
+~
+LINE: 1513
+FILE: admin/controller/sale/order.php
+CODE: curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+LINE: 45
+LINE: 102
+LINE: 159
+LINE: 198
+LINE: 1432
+LINE: 2252
+FILE: admin/controller/setting/setting.php
+CODE: $data['entry_google_analytics'] = $this->language->get('entry_google_analytics');
+LINE: 158
+CODE: $data['help_google_analytics'] = $this->language->get('help_google_analytics');
+LINE: 227
+CODE: $data['config_seo_url'] = $this->config->get('config_seo_url');
+LINE: 1236
+FILE: admin/language/english/catalog/product.php
+CODE: $_['entry_recurring']        = 'Recurring Profile';
+LINE: 82
+FILE: admin/language/english/setting/setting.php
+CODE: $_['text_smtp']                        = 'SMTP';
+LINE: 22
+CODE: $_['entry_seo_url']                    = 'Use SEO URLs';
+LINE: 123
+CODE: $_['help_google_analytics']            = 'Login to your <a h
+LINE: 202
+CODE: public function getTotalCategoriesByLayoutId($layout_id)
+LINE: 342
+FILE: admin/model/catalog/product.php
+CODE: if (isset($data['product_category'])
+LINE: 82
+CODE: if (isset($data['product_category']))
+LINE: 238
+CODE: return $product_layout_data;
+LINE: 620
+CODE: <input type="hidden" name="manufacturer_id" value="<?php echo $manufacturer_id; ?>" />
+LINE: 442
+FILE: admin/view/template/setting/setting.tpl
+CODE: <input type="radio" name="config_seo_url" value="0" />
+LINE: 1424
+FILE: catalog/controller/common/header.php
+CODE: $data['name'] = $this->config->get('config_name');
+LINE: 50
+CODE: return $this->load->view('default/template/common/header.tpl', $data);
+LINE: 250
+FILE: catalog/controller/common/home.php
+CODE: $this->document->addLink(HTTP_SERVER, 'canonical');
+LINE: 8
+FILE: catalog/controller/common/language.php
+CODE: $data['redirect'] = $this->url->link('common/home');
+LINE: 28
+CODE: $data['redirect'] = $this->url->link($route, $url, $this->request->server['HTTPS']);
+LINE: 46
+REGEX: ~		if \(isset\(\$this\-\>request\-\>post\['redirect'\]\)\) \{
+			\$this\-\>response\-\>redirect\(\$this\-\>request\-\>post\['redirect'\]\);~
+LINE: 64
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 28
+FILE: catalog/view/theme/default/template/common/language.tpl
+CODE: <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+LINE: 18
+REGEX: ~if \(isset\(\$this\-\>request\-\>get\['route'\]\)\) \{
+			\$this\-\>document\-\>addLink\(\$this\-\>url\-\>link\('common/home'\), 'canonical'\);
+		\}~
+LINE: 8
+CODE: $this->response->setOutput($this->load->view('default/template/common/home.tpl', $data));
+LINE: 46
+----------------------------------------------------------------
+2015-11-04 14:58:58 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Новости
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+LINE: 33
+FILE: admin/controller/common/menu.php
+CODE: $data['feed'] = $this->url->link('extension/feed', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 131
+FILE: catalog/controller/common/footer.php
+CODE: $data['text_account'] = $this->language->get('text_account');
+LINE: 22
+FILE: catalog/language/english/common/footer.php
+CODE: $_
+LINE: 6
+FILE: catalog/language/russian/common/footer.php
+CODE: $_
+LINE: 6
+FILE: catalog/view/theme/bardahl/template/common/footer.tpl
+CODE: <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+NOT FOUND!
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+LINE: 28
+FILE: catalog/controller/common/seo_url.php
+CODE: if ($url[0] == 'information_id') {
+LINE: 37
+CODE: } elseif (isset($this->request->get['information_id'])) {
+LINE: 61
+CODE: if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+LINE: 115
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+LINE: 41
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id'  && $url[0] != 'category_id' && $url[0] != 'product_id') {
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Скидки и Акции
+CODE: <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+LINE: 33
+CODE: $data['feed'] = $this->url->link('extension/feed', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 131
+CODE: $data['text_account'] = $this->language->get('text_account');
+LINE: 22
+CODE: $_
+LINE: 6
+CODE: $_
+LINE: 6
+CODE: <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+NOT FOUND!
+CODE: <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+LINE: 31
+CODE: if ($url[0] == 'information_id') {
+LINE: 42
+CODE: } elseif (isset($this->request->get['information_id'])) {
+LINE: 72
+CODE: if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+NOT FOUND!
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+NOT FOUND!
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id'  && $url[0] != 'category_id' && $url[0] != 'product_id') {
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 38
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 86
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 89
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 37
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 196
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 202
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 242
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 188
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+MOD: Seo Pro for oc2011+
+FILE: admin/controller/catalog/product.php
+CODE: $data['entry_recurring'] = $this->language->get('entry_recurring');
+LINE: 600
+CODE: $this->load->model('catalog/category');
+LINE: 1074
+REGEX: ~		\$this\-\>response\-\>setOutput\(json_encode\(\$json\)\);
+	\}
+~
+LINE: 1513
+FILE: admin/controller/sale/order.php
+CODE: curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+LINE: 45
+LINE: 102
+LINE: 159
+LINE: 198
+LINE: 1432
+LINE: 2252
+FILE: admin/controller/setting/setting.php
+CODE: $data['entry_google_analytics'] = $this->language->get('entry_google_analytics');
+LINE: 158
+CODE: $data['help_google_analytics'] = $this->language->get('help_google_analytics');
+LINE: 227
+CODE: $data['config_seo_url'] = $this->config->get('config_seo_url');
+LINE: 1236
+FILE: admin/language/english/catalog/product.php
+CODE: $_['entry_recurring']        = 'Recurring Profile';
+LINE: 82
+FILE: admin/language/english/setting/setting.php
+CODE: $_['text_smtp']                        = 'SMTP';
+LINE: 22
+CODE: $_['entry_seo_url']                    = 'Use SEO URLs';
+LINE: 123
+CODE: $_['help_google_analytics']            = 'Login to your <a h
+LINE: 202
+CODE: public function getTotalCategoriesByLayoutId($layout_id)
+LINE: 342
+FILE: admin/model/catalog/product.php
+CODE: if (isset($data['product_category'])
+LINE: 82
+CODE: if (isset($data['product_category']))
+LINE: 238
+CODE: return $product_layout_data;
+LINE: 620
+CODE: <input type="hidden" name="manufacturer_id" value="<?php echo $manufacturer_id; ?>" />
+LINE: 442
+FILE: admin/view/template/setting/setting.tpl
+CODE: <input type="radio" name="config_seo_url" value="0" />
+LINE: 1424
+FILE: catalog/controller/common/header.php
+CODE: $data['name'] = $this->config->get('config_name');
+LINE: 50
+CODE: return $this->load->view('default/template/common/header.tpl', $data);
+LINE: 250
+FILE: catalog/controller/common/home.php
+CODE: $this->document->addLink(HTTP_SERVER, 'canonical');
+LINE: 8
+FILE: catalog/controller/common/language.php
+CODE: $data['redirect'] = $this->url->link('common/home');
+LINE: 28
+CODE: $data['redirect'] = $this->url->link($route, $url, $this->request->server['HTTPS']);
+LINE: 46
+REGEX: ~		if \(isset\(\$this\-\>request\-\>post\['redirect'\]\)\) \{
+			\$this\-\>response\-\>redirect\(\$this\-\>request\-\>post\['redirect'\]\);~
+LINE: 64
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 28
+FILE: catalog/view/theme/default/template/common/language.tpl
+CODE: <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+LINE: 18
+REGEX: ~if \(isset\(\$this\-\>request\-\>get\['route'\]\)\) \{
+			\$this\-\>document\-\>addLink\(\$this\-\>url\-\>link\('common/home'\), 'canonical'\);
+		\}~
+LINE: 8
+CODE: $this->response->setOutput($this->load->view('default/template/common/home.tpl', $data));
+LINE: 46
+----------------------------------------------------------------
+2015-11-27 11:18:26 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Новости
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+LINE: 33
+FILE: admin/controller/common/menu.php
+CODE: $data['feed'] = $this->url->link('extension/feed', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 131
+FILE: catalog/controller/common/footer.php
+CODE: $data['text_account'] = $this->language->get('text_account');
+LINE: 22
+FILE: catalog/language/english/common/footer.php
+CODE: $_
+LINE: 6
+FILE: catalog/language/russian/common/footer.php
+CODE: $_
+LINE: 6
+FILE: catalog/view/theme/bardahl/template/common/footer.tpl
+CODE: <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+NOT FOUND!
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+LINE: 28
+FILE: catalog/controller/common/seo_url.php
+CODE: if ($url[0] == 'information_id') {
+LINE: 37
+CODE: } elseif (isset($this->request->get['information_id'])) {
+LINE: 61
+CODE: if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+LINE: 115
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+LINE: 41
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id'  && $url[0] != 'category_id' && $url[0] != 'product_id') {
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Наши партнеры
+CODE: <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+LINE: 33
+CODE: $data['feed'] = $this->url->link('extension/feed', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 131
+CODE: $data['text_account'] = $this->language->get('text_account');
+LINE: 22
+CODE: $_
+LINE: 6
+CODE: $_
+LINE: 6
+CODE: <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+NOT FOUND!
+CODE: <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+LINE: 31
+CODE: if ($url[0] == 'information_id') {
+LINE: 42
+CODE: } elseif (isset($this->request->get['information_id'])) {
+LINE: 72
+CODE: if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+NOT FOUND!
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+NOT FOUND!
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id'  && $url[0] != 'category_id' && $url[0] != 'product_id') {
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Скидки и Акции
+CODE: <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+LINE: 33
+CODE: $data['feed'] = $this->url->link('extension/feed', 'token=' . $this->session->data['token'], 'SSL');
+LINE: 131
+CODE: $data['text_account'] = $this->language->get('text_account');
+LINE: 22
+CODE: $_
+LINE: 6
+CODE: $_
+LINE: 6
+CODE: <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+NOT FOUND!
+CODE: <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+LINE: 34
+CODE: if ($url[0] == 'information_id') {
+LINE: 47
+CODE: } elseif (isset($this->request->get['information_id'])) {
+LINE: 81
+CODE: if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+NOT FOUND!
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+NOT FOUND!
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id'  && $url[0] != 'category_id' && $url[0] != 'product_id') {
+NOT FOUND!
+----------------------------------------------------------------
+MOD: Tweak for OpenCart 2x Russkaya sborka
+FILE: admin/view/template/common/header.tpl
+CODE: <?php foreach ($links as $link) { ?>
+LINE: 38
+CODE: <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+LINE: 83
+CODE: <li><a href="http://docs.opencart.com" target="_blank"><?php echo $text_documentation; ?></a></li>
+LINE: 86
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+LINE: 89
+CODE: <li><a href="<?php echo $fraud; ?>"><?php echo $text_fraud; ?></a></li>
+LINE: 40
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
+LINE: 202
+CODE: <label class="col-sm-2 control-label" for="input-sku">
+LINE: 208
+CODE: <label class="col-sm-2 control-label" for="input-location"><?php echo $entry_location; ?></label>
+LINE: 248
+CODE: <input type="text" name="model" value="<?php echo $model; ?>" placeholder="<?php echo $entry_model; ?>" id="input-model" class="form-control" />
+LINE: 194
+FILE: admin/model/catalog/category.php
+CODE: if (isset($data['keyword'])) {
+LINE: 49
+FILE: catalog/model/payment/pp_standard.php
+CODE: 'AUD',
+LINE: 21
+----------------------------------------------------------------
+MOD: Seo Pro for oc2011+
+FILE: admin/controller/catalog/product.php
+CODE: $data['entry_recurring'] = $this->language->get('entry_recurring');
+LINE: 601
+CODE: $this->load->model('catalog/category');
+LINE: 1075
+REGEX: ~		\$this\-\>response\-\>setOutput\(json_encode\(\$json\)\);
+	\}
+~
+LINE: 1514
+FILE: admin/controller/sale/order.php
+CODE: curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+LINE: 45
+LINE: 102
+LINE: 159
+LINE: 198
+LINE: 1432
+LINE: 2252
+FILE: admin/controller/setting/setting.php
+CODE: $data['entry_google_analytics'] = $this->language->get('entry_google_analytics');
+LINE: 158
+CODE: $data['help_google_analytics'] = $this->language->get('help_google_analytics');
+LINE: 227
+CODE: $data['config_seo_url'] = $this->config->get('config_seo_url');
+LINE: 1236
+FILE: admin/language/english/catalog/product.php
+CODE: $_['entry_recurring']        = 'Recurring Profile';
+LINE: 82
+FILE: admin/language/english/setting/setting.php
+CODE: $_['text_smtp']                        = 'SMTP';
+LINE: 22
+CODE: $_['entry_seo_url']                    = 'Use SEO URLs';
+LINE: 123
+CODE: $_['help_google_analytics']            = 'Login to your <a h
+LINE: 202
+CODE: public function getTotalCategoriesByLayoutId($layout_id)
+LINE: 342
+FILE: admin/model/catalog/product.php
+CODE: if (isset($data['product_category'])
+LINE: 82
+CODE: if (isset($data['product_category']))
+LINE: 238
+CODE: return $product_layout_data;
+LINE: 621
+CODE: <input type="hidden" name="manufacturer_id" value="<?php echo $manufacturer_id; ?>" />
+LINE: 448
+FILE: admin/view/template/setting/setting.tpl
+CODE: <input type="radio" name="config_seo_url" value="0" />
+LINE: 1424
+FILE: catalog/controller/common/header.php
+CODE: $data['name'] = $this->config->get('config_name');
+LINE: 57
+CODE: return $this->load->view('default/template/common/header.tpl', $data);
+LINE: 257
+FILE: catalog/controller/common/home.php
+CODE: $this->document->addLink(HTTP_SERVER, 'canonical');
+LINE: 8
+FILE: catalog/controller/common/language.php
+CODE: $data['redirect'] = $this->url->link('common/home');
+LINE: 28
+CODE: $data['redirect'] = $this->url->link($route, $url, $this->request->server['HTTPS']);
+LINE: 46
+REGEX: ~		if \(isset\(\$this\-\>request\-\>post\['redirect'\]\)\) \{
+			\$this\-\>response\-\>redirect\(\$this\-\>request\-\>post\['redirect'\]\);~
+LINE: 64
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 28
+FILE: catalog/view/theme/default/template/common/language.tpl
+CODE: <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+LINE: 18
+REGEX: ~if \(isset\(\$this\-\>request\-\>get\['route'\]\)\) \{
+			\$this\-\>document\-\>addLink\(\$this\-\>url\-\>link\('common/home'\), 'canonical'\);
+		\}~
+LINE: 8
+CODE: $this->response->setOutput($this->load->view('default/template/common/home.tpl', $data));
+LINE: 46
+----------------------------------------------------------------
