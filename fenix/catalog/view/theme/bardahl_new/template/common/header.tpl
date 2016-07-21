@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="catalog/view/theme/bardahl_new/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 
 	<link rel="stylesheet" href="catalog/view/theme/bardahl_new/stylesheet/style.css">
-	<link rel="stylesheet" href="catalog/view/javascript/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="catalog/view/theme/bardahl_new/stylesheet/font-awesome.min.css">
 
 	<!-- Owl Carousel CSS -->
 	<link rel="stylesheet" href="catalog/view/theme/bardahl_new/owl-carousel/owl.carousel.css">
@@ -48,7 +48,7 @@
     <?php echo $google_analytics; ?>
 
 </head>
-<body>
+<body class="body">
     <!--FB-->
     <div id="fb-root"></div>
     <script>(function(d, s, id) {

@@ -1,10 +1,10 @@
-body,h1,h2,h3,h4,h5,h6 {
+body.body,h1,h2,h3,h4,h5,h6 {
     font-family: OpenSans-Regular, Myriad Pro, sans-serif;
     font-weight: normal;
 }
 
 /*@font-face{font-family: 'Open Sans',sans-serif;}*/
-body {
+body.body{
     font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
     background-color: #fff;
     width: 100%;

@@ -22,6 +22,10 @@ table {
     overflow: hidden;
 }
 
+body #header .h_wrapper {
+    font-family: Roboto,Arial;    
+}
+
 .logoLink {
     display: block;
     width: 122px;
@@ -131,6 +135,8 @@ table {
     line-height: 30px;
     text-decoration: none;
     border-right: 1px solid #626161;
+    font-family:  Roboto,Arial;
+    font-size: 16px;
 }
 
 
