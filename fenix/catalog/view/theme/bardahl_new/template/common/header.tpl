@@ -38,6 +38,9 @@
 	<!-- Owl Carousel JS -->
 	<script type="text/javascript" src="catalog/view/theme/bardahl_new/owl-carousel/owl.carousel.min.js"></script>
 
+	<!-- JS Carousel -->
+	<script type="text/javascript" src="catalog/view/theme/bardahl_new/js/jquery.carouFredSel-5.2.2.js"></script>
+
 	<?php foreach ($scripts as $script) { ?>
 		<script type="text/javascript" src="<?php echo $script; ?>">
 	<?php } ?>

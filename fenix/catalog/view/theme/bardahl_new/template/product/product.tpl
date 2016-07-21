@@ -2,202 +2,148 @@
 
 echo $header; ?>
 <div class="middle">
-    <div class="c-container">     
-        <div class="card">
-            <div class="t-card clearfix">
-                <div class="l-card">
-                    <figure>
-                        <?php if ($thumb) { ?>
-                        <img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" />
-                        <?php } ?>
-                    </figure>
-                    <div class="b-card clearfix">
-                        <div>
-                            <?php if ($price) { ?>
-                                <ul class="list-unstyled">
-                                    <?php if (!$special) { ?>
-                                        <li>
-                                            <div class="price bold"><?php echo $price; ?> <i class="fa fa-rub"></i></div>
-                                        </li>
-                                    <?php } else { ?>
-                                        <li><span class="price bold special"><?php echo $price; ?> <i class="fa fa-rub"></i></span></li>
-                                        <li><div class="price bold"><?php echo $special; ?> <i class="fa fa-rub"></i></div></li>
-                                    <?php } ?>	
-                                    <?php if ($discounts) { ?>
-                                        <li>
-                                            <hr>
-                                        </li>
-                                        <?php foreach ($discounts as $discount) { ?>
-                                        <li><?php echo $discount['quantity']; ?><?php echo $text_discount; ?><?php echo $discount['price']; ?> <i class="fa fa-rub"></i></li>
-                                        <?php } ?>
-                                    <?php } ?>
-                                </ul>
-                            <?php } ?>
-                            <div>
-                                <button href="javascript:void(0);" onclick="cart.add('<?php echo $product_id; ?>', '<?php echo 1 ?>');" class="btn btn-primary bt-bsk bold" <?php echo ($quantity > 0 ? '':'disabled');?>><?php if($quantity > 0){?><i class="glyphicon glyphicon-shopping-cart"></i>В корзину<?php }else{?>Нет в наличии<?php }?></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="r-card">
-                    <div class="t-r-card">
-                        <div class="hed-card bold"><?php echo $heading_title; ?></div>
-                        <div class="articul">
-                            <?php if ($sku) { ?>
-                                Артикул: <strong><?php echo $sku; ?></strong>
-                            <?php } ?>
-                        </div>
-                        <?php foreach ($attribute_groups as $attribute_group) { foreach ($attribute_group['attribute'] as $attribute) { ?>
-                        <div class="volum"><?php echo $attribute['name'].' '.$attribute['text'];?></div>
-                        <?php }} ?>			                        
-                    </div>
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a href="#tab-description" data-toggle="tab"><?php echo $tab_description; ?></a></li>
-                        <?php if ($admission) { ?>
-                            <li><a href="#tab-admission" data-toggle="tab"><?php echo $tab_admission; ?></a></li>
-                        <?php } ?>
-						<?php if ($technical_info) { ?>
-                            <li><a href="#tab-technical_info" data-toggle="tab"><?php echo $tab_technical_info; ?></a></li>
-                        <?php } ?>
-                        <?php if ($attribute_groups) { ?>
-                         <li><a href="#tab-specification" data-toggle="tab"><?php echo $tab_attribute; ?></a></li>
-                        <?php } ?>
-                        <?php if ($review_status) { ?>
-                            <li><a href="#tab-review" data-toggle="tab"><?php echo $tab_review; ?></a></li>
-                        <?php } ?>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
-                        <?php if ($admission) { ?>
-                            <div class="tab-pane" id="tab-admission"><?php echo $admission; ?></div>
-                        <?php } ?>
-						<?php if ($technical_info) { ?>
-                            <div class="tab-pane" id="tab-technical_info"><?php echo $technical_info; ?></div>
-                        <?php } ?>
-                        <?php if ($attribute_groups) { ?>
-                        <div class="tab-pane" id="tab-specification">
-                            <table class="table table-bordered">
-                                <?php foreach ($attribute_groups as $attribute_group) { ?>
-                                <thead>
-                                    <tr>
-                                        <td colspan="2"><strong><?php echo $attribute_group['name']; ?></strong></td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
-                                    <tr>
-                                        <td><?php echo $attribute['name']; ?></td>
-                                        <td><?php echo $attribute['text']; ?></td>
-                                    </tr>
-                                <?php } ?>
-                                </tbody>
-                                <?php } ?>
-                            </table>
-                        </div>
-                        <?php } ?>
-                        <?php if ($review_status) { ?>
-                        <div class="tab-pane" id="tab-review">
-                            <form class="form-horizontal" id="form-review">
-                                <div id="review"></div>
-                                <div class="buttons clearfix">
-                                    <div>
-                                        <button type="button" id="button-show-review-modal" class="btn btn-primary"><?php echo $button_continue; ?></button>
-                                    </div>
-                                </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="createReviewModal" tabindex="-1" role="dialog" aria-labelledby="createReviewModalLabel">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть"><span aria-hidden="true">&times;</span></button>
-                                                <h4 class="modal-title" id="createReviewModalLabel">Создание отзыва</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h2><?php echo $text_write; ?></h2>
-                                                <?php if ($review_guest) { ?>
-                                                <div class="form-group required">
-                                                    <div class="col-sm-12">
-                                                        <label class="control-label" for="input-name"><?php echo $entry_name; ?></label>
-                                                        <input type="text" name="name" value="" id="input-name" class="form-control" />
-                                                    </div>
-                                                </div>
-                                                <div class="form-group required">
-                                                    <div class="col-sm-12">
-                                                        <label class="control-label" for="input-review"><?php echo $entry_review; ?></label>
-                                                        <textarea name="text" rows="5" id="input-review" class="form-control"></textarea>
-                                                        <div class="help-block"><?php echo $text_note; ?></div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group required">
-                                                    <div class="col-sm-12">
-                                                        <label class="control-label"><?php echo $entry_rating; ?></label>
-                                                        &nbsp;&nbsp;&nbsp; <?php echo $entry_bad; ?>&nbsp;
-                                                        <input type="radio" name="rating" value="1" />
-                                                        &nbsp;
-                                                        <input type="radio" name="rating" value="2" />
-                                                        &nbsp;
-                                                        <input type="radio" name="rating" value="3" />
-                                                        &nbsp;
-                                                        <input type="radio" name="rating" value="4" />
-                                                        &nbsp;
-                                                        <input type="radio" name="rating" value="5" />
-                                                        &nbsp;<?php echo $entry_good; ?></div>
-                                                </div>
-                                                <?php if ($site_key) { ?>
-                                                <div class="form-group">
-                                                    <div class="col-sm-12">
-                                                        <div class="g-recaptcha" data-sitekey="<?php echo $site_key; ?>"></div>
-                                                    </div>
-                                                </div>
-                                                <?php } ?>
-                                                <?php } else { ?>
-                                                    <?php echo $text_login; ?>
-                                                <?php } ?>
-                                                </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-                                                <button type="button" id="button-review" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary"><?php echo $button_continue; ?></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                    <?php } ?>
-                    </div>
-                </div>
+    <div class="c-container">
+		<div class="main-content">
+        <div class="container container--padding">
+            <div class="main-breadcrumbs">
+                <a href="#">Главная</a> > <a href="#">Каталог</a> > <a href="#">Моторные масла</a> >
+                <a href="#">Для автомобилей</a> > <a href="#">Серии XTC C60</a> > <?php echo $heading_title; ?>
             </div>
-            <?php if ($products) { ?>
-            <div class="similar-product">
-                <div class="hed-prod">Вместе с этим товаром покупают:</div>
-                <div class="flexslider slide-main">
-                    <ul class="slides">
-                        <?php 
-                            $count = count($products);
-                            $i = 1;
-                        ?>
-                        <li>
-                            <?php foreach ($products as $product) { ?>
-                            <div class="item">
-                                <figure><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" /></a></figure>
-                                <div class="txt-slide">
-                                    <h3><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h3>
-                                    <span class="price"><?php echo $product['price']; ?> <i class="fa fa-rub"></i></span>
-                                    <button class="btn btn-primary" type="button" onclick="cart.add('<?php echo $product['product_id']; ?>', 1);"><i class="glyphicon glyphicon-shopping-cart"></i></button>
-                                </div>
+            <article class="card-product">
+                <h1><?php echo $heading_title; ?></h1>
+                <div class="card-product__vendor-code">Артикул: <?php echo $sku; ?></div>
+                <div class="card-product__box">
+                    <div class="gallery-box">
+                        <div class="gallery-box__view">
+                            <div class="gallery-box__big-image">
+                                <?php if ($thumb) { ?>
+                        			<img class="js-big-image" src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" />
+                        		<?php } ?>
                             </div>
-                            <?php if (($i % 4) == 0 && $i !=$count) { ?>
-                                </li>
-                                <li>
-                            <?php } ?>
-                            <?php $i++; } ?>
-                        </li>  
+                        </div>
+                        <div class="gallery-box__thumbnails">
+                    <a class="gallery-box__thumbnails-item js-gallery-item" href="img/good-big.jpg">
+                        <img src="img/good.png" alt="Моторное масло XTC C60 0W40 1 л.">
+                    </a>
+                    <a class="gallery-box__thumbnails-item js-gallery-item" href="img/good-big-1.jpg">
+                        <img src="img/good-1.jpg" alt="Моторное масло XTC C60 0W40 1 л.">
+                    </a>
+                    <a class="gallery-box__thumbnails-item js-gallery-item" href="img/good-big-2.jpg">
+                        <img src="img/good-2.jpg" alt="Моторное масло XTC C60 0W40 1 л.">
+                    </a>
+                    </div>
+                    </div>
+                    <div class="card-product__price">
+                        <div class="card-product__old-price">2199 руб.</div>
+                        <div class="card-product__new-price"><?php echo $price; ?> <span>руб.</span></div>
 
+                        <a href="#add-to-box" class="btn btn--big add-box">Купить</a><br>
+                        <a href="#add-to-box" class="cart-block__buy-one-click add-box">Купить в один клик</a><br>
+                        <a href="#add-to-box" class="cart-block__buy-to-credit add-box">Оформить в кредит</a>
+                    </div>
+                </div>
+                <div class="tabs js-tabs">
+                    <ul class="tabs__list">
+                        <li>Описание</li>
+                        <li>Допуски</li>
+                        <li>Технические характеристики</li>
+                        <li>Отзывы</li>
                     </ul>
+                    <div class="tabs__container">
+                <div class="tabs__item">
+                    <p><?php echo $tab_description; ?></p>
+                </div>
+                <div class="tabs__item">
+                            <p>Допуски</p>
+                </div>
+                <div class="tabs__item">
+                            <p>Технические характеристики</p>
+                </div>
+                <div class="tabs__item">
+                            <div class="reviews">
+                                <div class="reviews__list">
+
+                                    <div class="reviews__item">
+                                    	<?php echo $tab_review; ?>
+                                    	<!--
+                                        <div class="reviews__info">
+                                            <span class="reviews__author">Семен,</span>
+                                            <span class="reviews__date">8 октября, 2015</span>
+                                        </div>
+                                        <div class="reviews__rating">
+                                            <i class="icon-star icon-star--like"></i>
+                                            <i class="icon-star icon-star--like"></i>
+                                            <i class="icon-star icon-star--like"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                        </div>
+                                        <div class="reviews__text">
+                                            залили это масло в автомобиль шкода 2014 г.в. с пробегом 7000 км,мотор 1.8 турбо,разницу заметили почти сразу,мотор мягче работает,и плюс большой что в городе раньше была температура масла 115-120 градусов,теперь выше 100 не поднимается
+                                        </div>
+                                        -->
+                                    </div>
+                                </div>
+                                <div class="reviews__add">
+                                    <div class="reviews__add-title">Оставить отзыв</div>
+                                    <form class="reviews__form" action="" method="post">
+                                        <div class="reviews__rating">
+                                                <span class="reviews__form-title">Оцените товар</span>
+                                                <i class="icon-star icon-star--like"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                        </div>
+                                        <label class="reviews__form-title" for="name">Ваше имя</label><br>
+                                        <input type="text" id="name" name="name"><br>
+                                        <label class="reviews__form-title" for="comment">Комментарий</label><br>
+                                        <textarea id="comment" name="comment"></textarea><br>
+                                        <button class="btn btn--big">Отправить отзыв</button>
+                                    </form>
+                                </div>
+                            </div>
                 </div>
             </div>
-        <?php } ?>
+                </div>
+            </article>
+            <?php if ($products) { ?>
+            <section class="similar-products">
+                <div class="similar-products__title">Поохожие товары</div>
+                <div class="similar-products__list">
+                    <ul class="js-carousel">
+                    	<?php foreach ($products as $product) {?>
+                        <li class="similar-products__item">
+                            <div class="similar-products__photo">
+                                <img src="<?php echo $product['thumb']; ?>" alt="">
+                            </div>
+                            <div class="similar-products__name">
+                                <?php echo $product['name']; ?>
+                            </div>
+                            <div class="similar-products__descr">
+                                <?php echo $product['description']; ?>
+                            </div>
+                            <div class="similar-products__price"><?php echo $product['price']; ?></div>
+                            <form action="" method="post">
+                                <div class="similar-products__count">
+                                    <div class="similar-products__minus js-products-minus">-</div>
+                                    <input class="similar-products__num js-products-num" type="text" name="count" value="1">
+                                    <div class="similar-products__plus js-products-plus">+</div>
+                                </div>
+                                <button class="btn btn--min"><a href="#add-to-box" class="add-box">Купить</a></button>
+                            </form>
+                        </li>
+                        <?php } ?>
+                    </ul>
+                    <div class="similar-products__navigation">
+                        <a class="similar-products__prev js-prev" href="#"></a>
+                        <div class="similar-products__pager js-pager"></div>
+                        <a class="similar-products__next js-next" href="#"></a>
+                    </div>
+                </div>
+            </section>
+            <?php } ?>
         </div>
+    </div>
     <?php echo $content_bottom; ?>
     </div>
 </div>
