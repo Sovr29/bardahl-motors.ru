@@ -6,10 +6,6 @@ class ControllerModuleCarousel extends Controller {
 		$this->load->model('design/banner');
 		$this->load->model('tool/image');
 
-		$this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
-		$this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.theme.default.css');
-		$this->document->addScript('catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js');
-
 		$data['banners'] = array();
 
 		$results = $this->model_design_banner->getBanner($setting['banner_id']);
@@ -26,7 +22,7 @@ class ControllerModuleCarousel extends Controller {
 		}
 
 		$data['module'] = $module++;
-                
+
                 $this->document->addScriptText('
                 $(\'#carousel' . $data['module'] . '\').owlCarousel({
                     items: 1,
@@ -37,7 +33,7 @@ class ControllerModuleCarousel extends Controller {
                     nav: true,
                     navText: [\'<i class="fa fa-angle-left"></i>\', \'<i class="fa fa-angle-right"></i>\']
                 });');
-                
+
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/carousel.tpl')) {
 			return $this->load->view($this->config->get('config_template') . '/template/module/carousel.tpl', $data);
 		} else {

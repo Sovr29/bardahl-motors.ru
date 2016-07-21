@@ -75,7 +75,7 @@
             <div id="sertificats">
                <?php for ($i = 1; $i <= 2; $i++) { ?>
                 <div class="serItem">
-                   <?php for ($i = 1; $i <= 4; $i++) { ?>
+                   <?php for ($j = 1; $j <= 4; $j++) { ?>
                     <span class="sertBox"><a class="fancybox" rel="group" href="catalog/view/theme/bardahl_new/img/sertificat.jpg"><span class="sertHover"></span><img src="catalog/view/theme/bardahl_new/img/sertificat.jpg" width="140" height="200" alt="Sertificat"></a></span>
                    <?php } ?>
                 </div>

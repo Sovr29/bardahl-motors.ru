@@ -1,4 +1,4 @@
-<div id="footer">
+	<div id="footer">
         <div class="h_wrapper">
             <div class="firstCol">
                 <ul>
@@ -98,12 +98,14 @@
 
     <script type="text/javascript" src="catalog/view/theme/bardahl_new/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
+	<!-- Carousel Custom-->>
     <script src="catalog/view/theme/bardahl_new/js/script.js"></script>
-<script type='text/javascript' src='catalog/view/theme/bardahl_new/js/SmoothScroll.js'></script>
-<script type="text/javascript" src="catalog/view/theme/bardahl_new/js/main.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script>
-<script type="text/javascript" src="http://onlinehtmltools.com/tab-generator/skinable_tabs.min.js"></script>
-<script type="text/javascript">
+
+	<script type='text/javascript' src='catalog/view/theme/bardahl_new/js/SmoothScroll.js'></script>
+	<script type="text/javascript" src="catalog/view/theme/bardahl_new/js/main.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="http://onlinehtmltools.com/tab-generator/skinable_tabs.min.js"></script>
+	<script type="text/javascript">
   $('.tabs_holder').skinableTabs({
     effect: 'basic_display',
     skin: 'skin11',

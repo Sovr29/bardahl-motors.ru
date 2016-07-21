@@ -5,7 +5,7 @@
 				<?php foreach ($banners as $banner) { ?>
   					<div class="sliderItem">
   						<a href="<?php echo $banner['link']; ?>">
-  							<img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" />
+  							<img width="610" height="220" src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" />
 						</a>
   					</div>
  		 		<?php } ?>

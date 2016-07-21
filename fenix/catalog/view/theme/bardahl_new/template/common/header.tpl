@@ -21,15 +21,22 @@
     <link rel="stylesheet" href="catalog/view/theme/bardahl_new/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 
     <!-- Default Theme -->
-        <link rel="stylesheet" href="catalog/view/theme/bardahl_new/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="catalog/view/theme/bardahl_new/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
     <link rel="stylesheet" href="catalog/view/theme/bardahl_new/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 
 	<link rel="stylesheet" href="catalog/view/theme/bardahl_new/stylesheet/style.css">
 	<link rel="stylesheet" href="catalog/view/javascript/font-awesome/css/font-awesome.min.css">
 
-    <!--  jQuery 3.0 -->
+	<!-- Owl Carousel CSS -->
+	<link rel="stylesheet" href="catalog/view/theme/bardahl_new/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="catalog/view/theme/bardahl_new/owl-carousel/owl.theme.css">
+
+    <!--  jQuery -->
     <script src="catalog/view/theme/bardahl_new/script/jquery.js"></script>
 	<script type="text/javascript" src="catalog/view/theme/bardahl_new/js/jquery-1.7.2.min.js"></script>
+
+	<!-- Owl Carousel JS -->
+	<script type="text/javascript" src="catalog/view/theme/bardahl_new/owl-carousel/owl.carousel.min.js"></script>
 
 	<?php foreach ($scripts as $script) { ?>
 		<script type="text/javascript" src="<?php echo $script; ?>">
