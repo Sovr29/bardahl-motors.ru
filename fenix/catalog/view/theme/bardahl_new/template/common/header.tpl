@@ -24,6 +24,10 @@
     <link rel="stylesheet" href="catalog/view/theme/bardahl_new/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
     <link rel="stylesheet" href="catalog/view/theme/bardahl_new/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 
+    <!-- Bootstrap CSS
+    <link rel="stylesheet" href="catalog/view/javascript/bootstrap/css/bootstrap.min.css">
+	-->
+
 	<link rel="stylesheet" href="catalog/view/theme/bardahl_new/stylesheet/style.css">
 	<link rel="stylesheet" href="catalog/view/theme/bardahl_new/stylesheet/font-awesome.min.css">
 
@@ -34,6 +38,10 @@
     <!--  jQuery -->
     <script src="catalog/view/theme/bardahl_new/script/jquery.js"></script>
 	<script type="text/javascript" src="catalog/view/theme/bardahl_new/js/jquery-1.7.2.min.js"></script>
+
+	<!-- Bootstrap JS
+	<script type="text/javascript" src="catalog/view/javascript/bootstrap/js/bootstrap.min.js"></script>
+	-->
 
 	<!-- Owl Carousel JS -->
 	<script type="text/javascript" src="catalog/view/theme/bardahl_new/owl-carousel/owl.carousel.min.js"></script>
@@ -79,65 +87,8 @@
 					<li><a target="_blank" href="https://www.youtube.com/channel/UCB-JDizLOaF0y4OQvFr_a8Q"><img width="58" src="catalog/view/theme/bardahl_new/img/yt.png" alt=""></a></li>
 				</ul>
 			</div>
-			<div id="shopBucket">
-				<span>Товаров: 2 шт.<br>
-				На сумму: <b>1390 р.</b></span>
-				<img src="catalog/view/theme/bardahl_new/img/bucket.png" alt="">
-			</div>
-			<div class="clr"></div>
-			<div class="box-list">
-				<span class="arrow-box"></span>
-				<div class="box-list-items">
-					<div class="box-list-item">
-						<div class="box-list-item-img">
-							<img src="catalog/view/theme/bardahl_new/img/box-list-item-1.png">
-						</div>
-						<div class="box-list-item-tit"><p>XTC C60 0W40, 1 л. x1</p></div>
-						<div class="box-list-item-price"><p>1390 руб.</p></div>
-						<div class="item-price">
-							   <div class="box-number">
-	                            <input type="text" value="1" />
-	                           </div>
-						</div>
-						<div class="clr"></div>
-						<span class="del-box-item"><a href="#"></a></span>
-					</div>
-					<div class="box-list-item">
-						<div class="box-list-item-img">
-							<img src="catalog/view/theme/bardahl_new/img/box-list-item-2.png">
-						</div>
-						<div class="box-list-item-tit"><p>3120 - Gear Oil 1 л.	x 1</p></div>
-						<div class="box-list-item-price"><p>700 руб.</p></div>
-						<div class="item-price">
-							   <div class="box-number">
-	                            <input type="text" value="1" />
-	                           </div>
-						</div>
-						<div class="clr"></div>
-						<span class="del-box-item"><a href="#"></a></span>
-					</div>
-				</div>
-				<div class="price-table">
-					<table>
-						<tr>
-							<td>Сума</td>
-							<td>1390<span> &#8381;</span></td>
-						</tr>
-						<tr>
-							<td>Самовывоз из магазина</td>
-							<td>0<span> &#8381;</span></td>
-						</tr>
-						<tr>
-							<td>Итого</td>
-							<td>1390<span> &#8381;</span></td>
-						</tr>
-					</table>
-				</div>
-				<div class="how-to-discount">*Вам осталось 4556 рублей до получения скидки 15%</div>
-				<a href="#" class="box-link-l">Оформить заказ сейчас</a>
-				<a href="#" class="box-link-r">Посмотреть корзину</a>
-			</div>
-			<div class="clr"></div>
+			<!-- Корзина -->
+			<?php echo $cart; ?>>
 		</div>
 	</div>
     <div id="mainMenu">

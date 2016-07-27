@@ -83,31 +83,38 @@ body #header .h_wrapper {
 
 .socialLinksHeader li{
     float: left;
-    
 }
+
+/*================== Cart ==================================*/
+
+.text-center{
+    text-align: center;
+}
+
 #shopBucket {
-    width: 200px;
-    height: 77px;
     border: 1px solid #dddddd;
-    margin-top: 6px;
+    cursor: pointer;
     float: right;
     font-size: 13px;
-    cursor: pointer;
+    height: 77px;
+    margin-top: 6px;
+    width: 200px;
 }
 
 #shopBucket span {
-    display: block;
-    height: 57px;
-    text-decoration: none;
     color: #000;
-    font-family: Roboto,Arial;
-    padding-top: 20px;
-    padding-left: 15px;
+    display: block;
     float: left;
+    font-family: Roboto,Arial;
+    height: 57px;
+    padding-left: 15px;
+    padding-top: 20px;
+    text-decoration: none;
 }
 
 #shopBucket img {
     margin: 24px 0 0 10px;
+    
 }
 
 .clr {
@@ -120,7 +127,8 @@ body #header .h_wrapper {
     background: #000;
 }
 
-.mainMenuList {
+ul.mainMenuList {
+    margin: 15px auto;
     padding: 0;
     height: 0;
     list-style: none;
@@ -270,6 +278,9 @@ body #header .h_wrapper {
     text-decoration: none;
     font-size: 12px;
     margin-left: 110px;
+}
+.hitBtn:hover{
+    cursor: pointer;
 }
 
 .hitPrev {
@@ -1153,7 +1164,7 @@ a:hover {
 
 .box-list {
     width: 455px;
-    height: 405px;
+    /*height: 405px;*/
     z-index: 999;
     background-color: #fff;
     font: 14px OpenSans-Regular;
@@ -1299,10 +1310,8 @@ a:hover {
     right: 20px;
 }
 
-.del-box-item a {
-    display: block;
-    width: 11px;
-    height: 11px;
+.del-box-item:hover {
+    cursor: pointer
 }
 
 .price-table {
@@ -1343,7 +1352,7 @@ a:hover {
     font: 14px OpenSans-Bold;
     text-align: center;
     float: left;
-    margin: 0 10px 0 40px;
+    margin: 0 10px 10px 40px;
     padding: 5px 0;
 }
 

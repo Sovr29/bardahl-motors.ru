@@ -2,7 +2,7 @@
 class ControllerCheckoutCart extends Controller {
 	public function index() {
 		$this->load->language('checkout/cart');
-                
+
                 $this->document->setName($this->language->get('heading_title'));
 		$this->document->setTitle($this->language->get('heading_title'));
 
@@ -181,7 +181,7 @@ class ControllerCheckoutCart extends Controller {
 					);
 				}
 			}
-			
+
 			// Totals
 			$this->load->model('extension/extension');
 
@@ -227,7 +227,7 @@ class ControllerCheckoutCart extends Controller {
 						'text'  => $this->currency->format($total['value'])
 				);
 			}
-			
+
 			$data['continue'] = $this->url->link('common/home');
 
 			$data['checkout'] = $this->url->link('checkout2/checkout2', '', 'SSL'); // checkout/checkout
@@ -289,7 +289,7 @@ class ControllerCheckoutCart extends Controller {
 			$product_id = 0;
 		}
 
-                if (isset($this->request->post['isOversell'])) {
+        if (isset($this->request->post['isOversell'])) {
 			$is_oversell = (int)$this->request->post['isOversell'];
 		} else {
 			$is_oversell = 0;
@@ -317,7 +317,7 @@ class ControllerCheckoutCart extends Controller {
 			} else {
 				$option = array();
 			}
-                        
+
 			$product_options = $this->model_catalog_product->getProductOptions($this->request->post['product_id']);
 
 			foreach ($product_options as $product_option) {
@@ -432,7 +432,7 @@ class ControllerCheckoutCart extends Controller {
             $this->load->language('checkout/cart');
             $json = array();
 	    $json["redirect"] = false;
-                
+
             // Update
             if (!empty($this->request->post['quantity']) && !empty($this->request->post['key'])) {
 		$this->cart->update($this->request->post['key'], $this->request->post['quantity']);
@@ -442,14 +442,14 @@ class ControllerCheckoutCart extends Controller {
 		unset($this->session->data['payment_method']);
 		unset($this->session->data['payment_methods']);
 		unset($this->session->data['reward']);
-                        
+
                 $json["redirect"] = true;
             }
 
 		$this->response->addHeader('Content-Type: application/json');
 		$this->response->setOutput(json_encode($json));
         }
-        
+
 	public function remove() {
 		$this->load->language('checkout/cart');
 

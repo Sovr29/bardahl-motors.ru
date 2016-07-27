@@ -865,7 +865,7 @@ $(document).ready(function(){
 			$('#price2').val($('#slider_price').slider("values",1));
 	});
 	
-
+            
       (function () {
         var inputs = document.querySelectorAll('div.number>input'),
           len = inputs.length,
@@ -881,20 +881,18 @@ $(document).ready(function(){
         }
       }());
 	  
+    
       (function () {
-        var inputs = document.querySelectorAll('div.box-number>input'),
-          len = inputs.length,
-          data = '<span class="plus" onclick="addto(this);">+</span>\
-            <span class="minus" onclick="addto(this,1);">-</span>';
-        for (; len--;) inputs[len].insertAdjacentHTML('afterend', data);
         addto = function (el, val) {
-          var par = el.parentNode || el.parentElement,
-            inp = par.children[0],
-            inpvalue = +inp.value;
-          console.log(inpvalue);
-          inp.value = inpvalue + (val ? inpvalue > 1 ? -1 : 0 : 1);
+        var par = el.parentNode || el.parentElement,
+        inp = par.children[0],
+        inpvalue = +inp.value;
+        inp.value = inpvalue + (val ? inpvalue > 1 ? -1 : 0 : 1);
         }
       }());
+      
+
+
 	  
 	  
 $(document).ready(function() {

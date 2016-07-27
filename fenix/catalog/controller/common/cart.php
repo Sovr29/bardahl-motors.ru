@@ -38,15 +38,15 @@ class ControllerCommonCart extends Controller {
 
 			array_multisort($sort_order, SORT_ASC, $total_data);
 		}
-
+		$data['subtotal'] = $this->cart->getSubTotal();
 		$data['text_empty'] = $this->language->get('text_empty');
 		$data['text_cart'] = $this->language->get('text_cart');
 		$data['text_checkout'] = $this->language->get('text_checkout');
 		$data['text_recurring'] = $this->language->get('text_recurring');
-		$data['text_items'] = sprintf($this->language->get('text_items'), $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total));
+		$data['text_items'] = sprintf($this->language->get('text_items'), $this->cart->countProducts()+ (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total));
 		$data['text_loading'] = $this->language->get('text_loading');
                 $data['countProducts'] = $this->cart->countProducts();
-                 
+
                 $data["hidden_redirect_value"] = "http://" . $this->request->server["HTTP_HOST"] . $this->request->server["REQUEST_URI"];
                 if($data["hidden_redirect_value"] === "http://bardahl-motor.ru/index.php?route=common/cart/info"){
                     $data["hidden_redirect_value"] = "http://bardahl-motor.ru";
@@ -144,8 +144,8 @@ class ControllerCommonCart extends Controller {
                 $data['checkout'] = $this->url->link('checkout2/checkout2', '', 'SSL');
                 $data['checkout_url'] = "?route=checkout2/checkout2";
                 $data['shipping_method'] = $this->url->link('checkout/shipping_method', 'isAjax=1', 'SSL'); // was until 12.06.16
-                
-                
+
+
 		$data['showOnlyTotal'] = $showOnlyTotal;
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/cart.tpl')) {
 			return $this->load->view($this->config->get('config_template') . '/template/common/cart.tpl', $data);

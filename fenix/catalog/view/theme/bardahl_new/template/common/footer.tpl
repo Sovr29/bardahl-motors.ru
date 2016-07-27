@@ -55,13 +55,7 @@
 		</div>
 	</div>
 
-	<div id="add-to-box" style="display: none">
-		<div class="f-add-to-box">
-			<div class="add-to-box-tit">Вы добавили товар в корзину</div>
-			<div class="add-to-box-subtit">Нажмите «Оформить заказ» или закройте окно, чтобы<br> продолжить покупки</div>
-			<a href="#">Оформить заказ сейчас</a>
-		</div>
-	</div>
+
 
 	<div id="first-banner" style="display: none">
 		<div class="f-first-banner">

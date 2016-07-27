@@ -37,7 +37,7 @@ echo $header; ?>
                         <div class="card-product__old-price">2199 руб.</div>
                         <div class="card-product__new-price"><?php echo $price; ?> <span>руб.</span></div>
 
-                        <a href="#add-to-box" class="btn btn--big add-box">Купить</a><br>
+                        <a class="btn btn--big add-box" href="cart.add('<?php echo $product_id; ?>', '<?php echo 1 ?>');"  <?php echo ($quantity > 0 ? '':'disabled');?>><?php if($quantity > 0){?>Купить<?php }else{?>Нет в наличии<?php }?></a><br>
                         <a href="#add-to-box" class="cart-block__buy-one-click add-box">Купить в один клик</a><br>
                         <a href="#add-to-box" class="cart-block__buy-to-credit add-box">Оформить в кредит</a>
                     </div>
