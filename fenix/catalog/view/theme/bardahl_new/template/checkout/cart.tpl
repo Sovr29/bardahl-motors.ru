@@ -1,6 +1,6 @@
 <?php echo $header; ?>
 <div class="middle">
-    <?php echo $content_top; ?>   
+    <?php echo $content_top; ?>
 <div class="c-container">
       <h1 id="header_title"><?php echo $heading_title; ?></h1>
         <?php if ($attention) { ?>
@@ -96,7 +96,7 @@
         </div>
     </div>
     <?php echo $shipping_method; ?>
-    <div class="buttonsChekout">       
+    <div class="buttonsChekout">
      <a href="<?php echo $checkout; ?>" data-href="<?php echo $checkout; ?>" class="btnCheckout">Оформить заказ</a>
      <a href="<?php echo $continue; ?>" class="btnBack"><?php echo $button_shopping; ?></a>
     </div>

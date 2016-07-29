@@ -1,6 +1,6 @@
 <?php
 class ControllerCheckout2Checkout2 extends Controller {
-    
+
 	public function index() {
                 // Validate cart has products and has stock.
 		if ((!$this->cart->hasProducts() && empty($this->session->data['vouchers'])) || (!$this->cart->hasStock() && !$this->config->get('config_stock_checkout'))) {
@@ -24,6 +24,9 @@ class ControllerCheckout2Checkout2 extends Controller {
 			}
 		}
 
+		$this->document->addStyle('catalog/view/theme/bardahl_new/slick/slick.css');
+		$this->document->addScript('catalog/view/theme/bardahl_new/slick/slick.min.js');
+
 		$this->load->language('checkout2/checkout2');
 
                 $this->document->setName($this->language->get('heading_title'));
@@ -38,12 +41,12 @@ class ControllerCheckout2Checkout2 extends Controller {
                 $this->document->addScript("catalog/view/javascript/jquery/maskedinput/jquery.maskedinput.min.js?v=1.02");
                 $this->document->addScript("catalog/view/theme/bardahl/js/checkout2Form.js");
                 //
-                
+
                 $this->document->addScript("catalog/view/theme/bardahl/js/jquery.cookie.js");
 		$this->document->addScript('catalog/view/javascript/jquery/datetimepicker/moment.js');
 		$this->document->addScript('catalog/view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js');
 		$this->document->addStyle('catalog/view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.css');
-                
+
 
 		// Required by klarna
 		if ($this->config->get('klarna_account') || $this->config->get('klarna_invoice')) {
@@ -76,7 +79,7 @@ class ControllerCheckout2Checkout2 extends Controller {
 		$data['text_checkout_shipping_method'] = $this->language->get('text_checkout_shipping_method');
 		$data['text_checkout_payment_method'] = $this->language->get('text_checkout_payment_method');
 		$data['text_checkout_confirm'] = $this->language->get('text_checkout_confirm');
-		
+
 		$data['entry_firstname'] = $this->language->get('entry_firstname');
 		$data['entry_lastname'] = $this->language->get('entry_lastname');
 		$data['entry_email'] = $this->language->get('entry_email');
@@ -84,14 +87,14 @@ class ControllerCheckout2Checkout2 extends Controller {
 		$data['entry_city'] = $this->language->get('entry_city');
 		$data['entry_address_1'] = $this->language->get('entry_address_1');
 		$data['entry_comment'] = $this->language->get('entry_comment');
-		
+
                 $data['column_image'] = $this->language->get('column_image');
                 $data['column_name'] = $this->language->get('column_name');
                 $data['column_model'] = $this->language->get('column_model');
                 $data['column_quantity'] = $this->language->get('column_quantity');
                 $data['column_price'] = $this->language->get('column_price');
                 $data['column_total'] = $this->language->get('column_total');
-                        
+
 		if (isset($this->session->data['error'])) {
 			$data['error_warning'] = $this->session->data['error'];
 			unset($this->session->data['error']);
@@ -117,7 +120,7 @@ class ControllerCheckout2Checkout2 extends Controller {
                 else{
                     $this->response->redirect($this->url->link('checkout2/cart'));
                 }
-		
+
                 //$this->document->addScriptText("$('#input-payment-telephone').mask('+7 (999) 999-99-99');");
                 $data['coupon'] = $this->load->controller('checkout2/coupon');
 		$data['column_left'] = $this->load->controller('common/column_left');
@@ -126,9 +129,9 @@ class ControllerCheckout2Checkout2 extends Controller {
 		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
-                
+
 		$products = $this->cart->getProducts();
-                
+
 		foreach ($products as $product) {
 			$product_total = 0;
 
@@ -220,7 +223,7 @@ class ControllerCheckout2Checkout2 extends Controller {
 				'href'      => $this->url->link('product/product', 'product_id=' . $product['product_id'])
 			);
 		}
-                        
+
 		$total_data = array();
 		$total = 0;
 		$taxes = $this->cart->getTaxes();
@@ -263,87 +266,87 @@ class ControllerCheckout2Checkout2 extends Controller {
 				'text'  => $this->currency->format($total['value'])
 			);
 		}
-                        
+
 		$data['cart'] = $this->url->link('checkout2/cart');
 		$data['formAction'] = $this->url->link('checkout2/checkout2/createOrder');
-		
+
                 if (isset($this->request->post['lastname'])) {
                     $data['lastname'] = $this->request->post['lastname'];
 		} else {
                     $data['lastname'] = '';
 		}
-                
+
                 if (isset($this->request->post['firstname'])) {
                     $data['firstname'] = $this->request->post['firstname'];
 		} else {
                     $data['firstname'] = '';
 		}
-		
+
                 if (isset($this->request->post['email'])) {
                     $data['email'] = $this->request->post['email'];
 		} else {
                     $data['email'] = '';
 		}
-                
+
                 if (isset($this->request->post['telephone'])) {
                     $data['telephone'] = $this->request->post['telephone'];
 		} else {
                     $data['telephone'] = '';
 		}
-                
+
                 if (isset($this->request->post['coupon'])){
                     $data['coupon'] = $this->request->post['coupon'];
                 } else {
                     $data['coupon'] = '';
                 }
-                
+
                 if (isset($this->request->post['comment'])) {
                     $data['comment'] = $this->request->post['comment'];
 		} else {
                     $data['comment'] = '';
 		}
-		
+
                 if (isset($this->request->post['city'])) {
                     $data['city'] = $this->request->post['city'];
 		} else {
                     $data['city'] = '';
 		}
-                
+
                 if (isset($this->request->post['address_1'])) {
                     $data['address_1'] = $this->request->post['address_1'];
 		} else {
                     $data['address_1'] = '';
 		}
-		
+
                 if (isset($this->request->post['closed'])) {
                     $data['closed'] = $this->request->post['closed'];
 		} else {
                     $data['closed'] = 0;
 		}
-                
+
 		$this->setPayment();
 		$data['payment_methods'] = $this->session->data['payment_methods'];
-		
-               
-                
+
+
+
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/checkout2/checkout2.tpl')) {
 			$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/checkout2/checkout2.tpl', $data));
 		} else {
 			$this->response->setOutput($this->load->view('default/template/checkout2/checkout2.tpl', $data));
 		}
-              
-             
+
+
 	}
-        
+
         public function setShipping() {
-            
+
             $shipping = explode('.', $this->request->post['shipping_method']);
             $this->session->data['shipping_method'] = $this->session->data['shipping_methods'][$shipping[0]]['quote'][$shipping[1]];
             $this->session->data['success'] = $this->language->get('text_success');
-            
-            
-			
-                        
+
+
+
+
             $address_data = array(
                     'address_id'     => 0,
                     'firstname'      => '',
@@ -368,13 +371,13 @@ class ControllerCheckout2Checkout2 extends Controller {
             $this->load->model('extension/extension');
 
             $results = $this->model_extension_extension->getExtensions('shipping');
-            
-            
-            
+
+
+
             foreach ($results as $result) {
                 if ($this->config->get($result['code'] . '_status')) {
                         $this->load->model('shipping/' . $result['code']);
-                        
+
                         $quote = $this->{'model_shipping_' . $result['code']}->getQuote($address_data);
 
                         if ($quote) {
@@ -385,8 +388,8 @@ class ControllerCheckout2Checkout2 extends Controller {
                                         'error'      => $quote['error']
                                 );
                         }
-                        
-                        
+
+
                 }
             }
 
@@ -395,14 +398,14 @@ class ControllerCheckout2Checkout2 extends Controller {
             foreach ($method_data as $key => $value) {
                     $sort_order[$key] = $value['sort_order'];
             }
-            
+
             array_multisort($sort_order, SORT_ASC, $method_data);
 
             $this->session->data['shipping_methods'] = $method_data;
         }
-        
+
         public function setPayment() {
-            
+
             $address_data = array(
                     'address_id'     => 0,
                     'firstname'      => '',
@@ -422,8 +425,8 @@ class ControllerCheckout2Checkout2 extends Controller {
                     'address_format' => '',
                     'custom_field'   => false,
             );
-            
-            
+
+
             // Totals
             $total_data = array();
             $total = 0;
@@ -489,38 +492,38 @@ class ControllerCheckout2Checkout2 extends Controller {
 
 
         public function createOrder() {
-            
+
             if(isset($this->request->post["ajax"])){
                 $ajax = true;
             }
             else{
                 $ajax = false;
             }
-            
-           
+
+
             $this->setShipping();
             $this->setPayment();
             $this->load->model('checkout2/order');
-            
-            
-            
+
+
+
             $order_data = array();
 
             $order_data['totals'] = array();
             $total = 0;
             $taxes = $this->cart->getTaxes();
-            
-            
-            
-            
+
+
+
+
 
             $this->load->model('extension/extension');
 
             $sort_order = array();
 
             $results = $this->model_extension_extension->getExtensions('total');
-            
-            
+
+
 
             foreach ($results as $key => $value) {
                     $sort_order[$key] = $this->config->get($value['code'] . '_sort_order');
@@ -550,16 +553,16 @@ class ControllerCheckout2Checkout2 extends Controller {
             $order_data['store_id'] = $this->config->get('config_store_id');
             $order_data['store_name'] = $this->config->get('config_name');
 
-            
-            
+
+
             if ($order_data['store_id']) {
                     $order_data['store_url'] = $this->config->get('config_url');
             } else {
                     $order_data['store_url'] = HTTP_SERVER;
             }
 
-            
-            
+
+
                     $order_data['customer_id'] = 0;
                     $order_data['customer_group_id'] = 0;
                     $order_data['firstname'] = $this->request->post['firstname'];
@@ -568,10 +571,10 @@ class ControllerCheckout2Checkout2 extends Controller {
                     $order_data['telephone'] = $this->request->post['telephone'];
                     $order_data['fax'] = '';
                     $order_data['custom_field'] = NULL;
-            
 
 
-                    
+
+
             $order_data['payment_firstname'] = $this->request->post['firstname'];
             $order_data['payment_lastname'] = $this->request->post['lastname'];
             $order_data['payment_company'] = 'не заполенно';
@@ -586,14 +589,14 @@ class ControllerCheckout2Checkout2 extends Controller {
             $order_data['payment_address_format'] = 'не заполенно';
             $order_data['payment_custom_field'] = (isset($this->session->data['payment_address']['custom_field']) ? $this->session->data['payment_address']['custom_field'] : array());
 
-            
-            
-            
+
+
+
             $this->session->data['payment_method'] = $this->session->data['payment_methods'][$this->request->post['payMethod']];
-            
-            
-            
-            
+
+
+
+
             if (isset($this->session->data['payment_method']['title'])) {
                     $order_data['payment_method'] = $this->session->data['payment_method']['title'];
             } else {
@@ -605,7 +608,7 @@ class ControllerCheckout2Checkout2 extends Controller {
             } else {
                     $order_data['payment_code'] = '';
             }
-            
+
             $order_data['shipping_firstname'] = $this->request->post['firstname'];
             $order_data['shipping_lastname'] = $this->request->post['lastname'];
             $order_data['shipping_company'] = 'не заполенно';
@@ -619,26 +622,26 @@ class ControllerCheckout2Checkout2 extends Controller {
 			$order_data['shipping_country_id'] = '176';
 			$order_data['shipping_address_format'] = 'не заполенно';
 			$order_data['shipping_custom_field'] = (isset($this->session->data['shipping_address']['custom_field']) ? $this->session->data['shipping_address']['custom_field'] : array());
-                    
+
 			if(!isset($this->session->data['shipping_method']))
 			{
 				$this->session->data['shipping_method'] = $this->session->data['shipping_methods']['pickup_msk']['quote']['pickup_msk'];
 			}
-            
+
             if (isset($this->session->data['shipping_method']['title'])) {
             	$order_data['shipping_method'] = $this->session->data['shipping_method']['address'];
             } else {
             	$order_data['shipping_method'] = '';
             }
 
-            
+
             if (isset($this->session->data['shipping_method']['code'])) {
             	$order_data['shipping_code'] = $this->session->data['shipping_method']['code'];
             } else {
             	$order_data['shipping_code'] = '';
 	    }
-            
-            
+
+
             $order_data['products'] = array();
 
             foreach ($this->cart->getProducts() as $product) {
@@ -672,7 +675,7 @@ class ControllerCheckout2Checkout2 extends Controller {
                     );
             }
 
-            
+
             // Gift Voucher
             $order_data['vouchers'] = array();
 
@@ -691,16 +694,16 @@ class ControllerCheckout2Checkout2 extends Controller {
                             );
                     }
             }
-            
+
             $order_data['comment'] = strip_tags($this->request->post['comment']);
-            
-            
-            
+
+
+
             $order_data['total'] = $total;
 
-           
-            
-            
+
+
+
             if (isset($this->request->cookie['tracking'])) {
                     $order_data['tracking'] = $this->request->cookie['tracking'];
 
@@ -749,8 +752,8 @@ class ControllerCheckout2Checkout2 extends Controller {
             } else {
                     $order_data['forwarded_ip'] = '';
             }
-            
-            
+
+
 
             if (isset($this->request->server['HTTP_USER_AGENT'])) {
                     $order_data['user_agent'] = $this->request->server['HTTP_USER_AGENT'];
@@ -765,9 +768,9 @@ class ControllerCheckout2Checkout2 extends Controller {
             }
 
             $this->load->model('checkout2/order');
-            
+
             $this->session->data['order_id'] = $this->model_checkout2_order->addOrder($order_data);
-            
+
             try{
                 if(
                     $order_data['shipping_code'] != 'delivery.vrn'
@@ -790,17 +793,17 @@ class ControllerCheckout2Checkout2 extends Controller {
                 }
             }
             catch(Exception $e){} //?
-            
+
             $this->model_checkout2_order->addOrderHistory($this->session->data['order_id'], 1, '', 1);
-            
+
             if ($this->request->post['payMethod'] == 'unitpay') {
                 $order_info = $this->model_checkout2_order->getOrder($this->session->data['order_id']);
 
-                
+
 		$data['unitpay_login'] = $this->config->get('unitpay_login');
                 $data['unitpay_key']= $this->config->get('unitpay_key');
-                
-                
+
+
 		// Номер заказа
 		$data['inv_id'] = $this->session->data['order_id'];
 
@@ -813,10 +816,10 @@ class ControllerCheckout2Checkout2 extends Controller {
 		$data['out_summ'] = $this->currency->format($rur_order_total, $rur_code, $order_info['currency_value'], FALSE);
                 $data['action']="https://unitpay.ru/pay/";
                 $data['sign'] = md5($data['inv_id']."RUB".$data['inv_desc'].$data['out_summ'].$data['unitpay_key']);
-		
-		
 
-		
+
+
+
 		$data['merchant_url'] = $data['action'] .
 				$data['unitpay_login'] .
 				'?sum='			. $data['out_summ'] .
@@ -824,26 +827,26 @@ class ControllerCheckout2Checkout2 extends Controller {
 				'&account='		. $data['inv_id'].
 				'&desc='		. $data['inv_desc'] .
                                 '&sign='                . $data['sign'];
-                
-                
-                
-                
+
+
+
+
                 if($ajax){
                     $json = array();
                     $json["redirect"] = $data['merchant_url'];
-                    
+
                     $this->response->addHeader('Content-Type: application/json');
                     $this->response->setOutput(json_encode($json));
-                    
+
                 }
                 else{
                     $this->response->redirect($data['merchant_url']);
                 }
-                 
-                
+
+
             }
             elseif ($this->request->post['payMethod'] == 'robocassa') {
-                
+
                 $mrh_login = $this->config->get('robocassa_key1');
                 $mrh_pass1 = $this->config->get('robocassa_key2');
 
@@ -870,14 +873,14 @@ class ControllerCheckout2Checkout2 extends Controller {
                 // язык
                 // language
                 $culture = "ru";
-                
+
                 $url = 'https://merchant.roboxchange.com/Index.aspx';
-                
+
                 if ($this->config->get('robocassa_test')) {
                     $url = 'http://test.robokassa.ru/Index.aspx';
                 }
-                
-                
+
+
 
                 // формирование подписи
                 // generate signature
@@ -894,14 +897,14 @@ class ControllerCheckout2Checkout2 extends Controller {
                     "<input type=hidden name=Culture value=$culture>".
                     "<input type=submit value='Pay'>".
                     "</form></html>".
-                    "<script>window.onload = function() {   document.getElementById(\"myForm\").submit();}</script>";             
-                
+                    "<script>window.onload = function() {   document.getElementById(\"myForm\").submit();}</script>";
+
             } else {
-                
+
                 if($ajax){
                     $json = array();
                     $json["redirect"] = $this->url->link('checkout/success');
-                    
+
                     $this->response->addHeader('Content-Type: application/json');
                     $this->response->setOutput(json_encode($json));
                 }
@@ -909,8 +912,8 @@ class ControllerCheckout2Checkout2 extends Controller {
                     $this->response->redirect($this->url->link('checkout/success'));
                 }
             }
-            
-            
+
+
         }
 
         public function country() {
@@ -963,7 +966,7 @@ class ControllerCheckout2Checkout2 extends Controller {
 		$this->response->addHeader('Content-Type: application/json');
 		$this->response->setOutput(json_encode($json));
 	}
-        
+
         public function getGeoZones(){
             $geo_zone_data = $this->cache->get('geo_zone');
 

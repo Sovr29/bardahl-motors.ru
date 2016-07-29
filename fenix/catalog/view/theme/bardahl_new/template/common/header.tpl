@@ -26,7 +26,7 @@
 
     <!-- Bootstrap CSS
     <link rel="stylesheet" href="catalog/view/javascript/bootstrap/css/bootstrap.min.css">
-	-->
+	 -->
 
 	<link rel="stylesheet" href="catalog/view/theme/bardahl_new/stylesheet/style.css">
 	<link rel="stylesheet" href="catalog/view/theme/bardahl_new/stylesheet/font-awesome.min.css">

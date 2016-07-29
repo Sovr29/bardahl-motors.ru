@@ -142,7 +142,7 @@ class ControllerCommonCart extends Controller {
 		$data['cart'] = $this->url->link('checkout/cart');
 		//$data['checkout'] = $this->url->link('checkout/checkout', '', 'SSL'); //standart
                 $data['checkout'] = $this->url->link('checkout2/checkout2', '', 'SSL');
-                $data['checkout_url'] = "?route=checkout2/checkout2";
+                $data['checkout_url'] = "?route=checkout/checkout";
                 $data['shipping_method'] = $this->url->link('checkout/shipping_method', 'isAjax=1', 'SSL'); // was until 12.06.16
 
 

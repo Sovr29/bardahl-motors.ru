@@ -1,7 +1,7 @@
 <?php echo $header; ?>
-<div class="middle">
-    <?php echo $content_top; ?>   
-<div class="c-container">
+<div class="c_middle">
+    <?php echo $content_top; ?>
+<div class="cc-container">
       <h1 id="header_title"><?php echo $heading_title; ?></h1>
         <?php if ($attention) { ?>
             <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $attention; ?>
@@ -55,16 +55,16 @@
                   <span class="label label-info"><?php echo $text_recurring_item; ?></span> <small><?php echo $product['recurring']; ?></small>
                   <?php } ?></td>
                 <td class="text-center"><div class="input-group btn-block" style="max-width: 200px; margin:auto;">
-                        <?php 
+                        <?php
                             $update_value = $product['quantity'] + 1;
                             $remove_value = $product['quantity'] - 1;
                         ?>
-                    
-                    
+
+
                     <input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" class="form-control" />
                     <span class="input-group-btn">
                         <button type="button" data-toggle="tooltip" title="<?php echo $button_update; ?>" class="btn btn-primary" onclick="cart.custUpdate('<?php  echo $product['key']; ?>', '<?php echo $update_value;?>');">+</button>
-                        
+
                         <?php
                             if($product['quantity'] > 1){
                                 ?>
@@ -77,7 +77,7 @@
                             <?php
                             }
                         ?>
-                        
+
                     <!--<button type="submit" data-toggle="tooltip" title="<?php echo $button_update; ?>" class="btn btn-primary"><i class="fa fa-refresh"></i></button>-->
                     <!--<button type="button" data-toggle="tooltip" title="<?php echo $button_remove; ?>" class="btn btn-danger" onclick="cart.remove('<?php echo $product['key']; ?>');"><i class="fa fa-times-circle"></i></button></span></div></td>-->
                 <td class="text-right"><?php echo $product['price']; ?> <i class="fa fa-rub"></i></td>
@@ -117,7 +117,7 @@
         </div>
     </div>
     <?php echo $shipping_method; ?>
-    <div class="buttonsChekout">       
+    <div class="buttonsChekout">
      <a href="<?php echo $checkout; ?>" data-href="<?php echo $checkout; ?>" class="btnCheckout">Оформить заказ</a>
      <a href="<?php echo $continue; ?>" class="btnBack"><?php echo $button_shopping; ?></a>
     </div>

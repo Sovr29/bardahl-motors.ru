@@ -1585,3 +1585,15 @@ a.nu {
 .fourthCol p>a:hover {
 	text-decoration: underline !important;
 }
+
+/*================== Checkout Page ======================*/
+.c_middle {
+    padding-top: 10px;
+    width: 100%;
+}
+
+.cc-container {
+    margin: 0 auto;
+    width: 1140px;
+}
+
