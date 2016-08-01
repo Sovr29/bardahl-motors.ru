@@ -11,6 +11,8 @@ class ControllerAccountAccount extends Controller {
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
+		$this->document->addStyle('catalog/view/theme/bardahl_new/stylesheet/account.css');
+
 		$data['breadcrumbs'] = array();
 
 		$data['breadcrumbs'][] = array(
@@ -31,8 +33,9 @@ class ControllerAccountAccount extends Controller {
 			$data['success'] = '';
 		}
 
-		$data['heading_title'] = $this->language->get('heading_title');
+		$data['text_account'] = $this->language->get('text_account');
 
+		$data['heading_title'] = $this->language->get('heading_title');
 		$data['text_my_account'] = $this->language->get('text_my_account');
 		$data['text_my_orders'] = $this->language->get('text_my_orders');
 		$data['text_my_newsletter'] = $this->language->get('text_my_newsletter');
@@ -58,6 +61,17 @@ class ControllerAccountAccount extends Controller {
 		$data['transaction'] = $this->url->link('account/transaction', '', 'SSL');
 		$data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');
 		$data['recurring'] = $this->url->link('account/recurring', '', 'SSL');
+		$data['logout'] = $this->url->link('account/logout', '', 'SSL');
+
+		$data['action'] = $this->url->link('account/edit', '', 'SSL');
+
+		if (isset($this->request->post['email'])) {
+			$data['email'] = $this->request->post['email'];
+		} elseif (!empty($customer_info)) {
+			$data['email'] = $customer_info['email'];
+		} else {
+			$data['email'] = '';
+		}
 
 		if ($this->config->get('reward_status')) {
 			$data['reward'] = $this->url->link('account/reward', '', 'SSL');

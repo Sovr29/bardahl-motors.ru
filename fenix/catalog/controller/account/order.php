@@ -13,6 +13,8 @@ class ControllerAccountOrder extends Controller {
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
+		$this->document->addStyle('catalog/view/theme/bardahl_new/stylesheet/account.css');
+
 		$data['breadcrumbs'] = array();
 
 		$data['breadcrumbs'][] = array(
@@ -37,6 +39,7 @@ class ControllerAccountOrder extends Controller {
 		);
 
 		$data['heading_title'] = $this->language->get('heading_title');
+		$data['text_account'] = $this->language->get('text_account');
 
 		$data['text_empty'] = $this->language->get('text_empty');
 
@@ -49,6 +52,11 @@ class ControllerAccountOrder extends Controller {
 
 		$data['button_view'] = $this->language->get('button_view');
 		$data['button_continue'] = $this->language->get('button_continue');
+
+		$data['edit'] = $this->url->link('account/edit', '', 'SSL');
+		$data['edit_password'] = $this->url->link('account/password', '', 'SSL');
+		$data['order'] = $this->url->link('account/order', '', 'SSL');
+		$data['logout'] = $this->url->link('account/logout', '', 'SSL');
 
 		if (isset($this->request->get['page'])) {
 			$page = $this->request->get['page'];

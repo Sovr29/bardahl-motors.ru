@@ -9,6 +9,8 @@ class ControllerAccountPassword extends Controller {
 			$this->response->redirect($this->url->link('account/login', '', 'SSL'));
 		}
 
+		$this->document->addStyle('catalog/view/theme/bardahl_new/stylesheet/account.css');
+
 		$this->load->language('account/password');
 
 		$this->document->setTitle($this->language->get('heading_title'));
@@ -50,15 +52,24 @@ class ControllerAccountPassword extends Controller {
 			'href' => $this->url->link('account/password', '', 'SSL')
 		);
 
+		$data['text_account'] = $this->language->get('text_account');
 		$data['heading_title'] = $this->language->get('heading_title');
-
 		$data['text_password'] = $this->language->get('text_password');
-
 		$data['entry_password'] = $this->language->get('entry_password');
 		$data['entry_confirm'] = $this->language->get('entry_confirm');
-
 		$data['button_continue'] = $this->language->get('button_continue');
 		$data['button_back'] = $this->language->get('button_back');
+
+		$data['edit'] = $this->url->link('account/edit', '', 'SSL');
+		$data['edit_password'] = $this->url->link('account/password', '', 'SSL');
+		$data['order'] = $this->url->link('account/order', '', 'SSL');
+		$data['logout'] = $this->url->link('account/logout', '', 'SSL');
+
+		if ($this->config->get('reward_status')) {
+			$data['reward'] = $this->url->link('account/reward', '', 'SSL');
+		} else {
+			$data['reward'] = '';
+		}
 
 		if (isset($this->error['password'])) {
 			$data['error_password'] = $this->error['password'];

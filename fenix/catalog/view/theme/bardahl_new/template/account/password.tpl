@@ -1,54 +1,57 @@
 <?php echo $header; ?>
 <div class="middle">
-    <?php echo $content_top; ?>   
+    <?php echo $content_top; ?>
     <div class="c-container">
-        <nav class="top-nav">
-                <ul>
-                    <?php 
-                    $last = count($breadcrumbs);
-                    foreach ($breadcrumbs as $num => $breadcrumb) { 
-                    ?>
-                        <?php if ($last != ($num+1)) { ?>
-                        <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-                        <?php } else { ?>
-                        <li><?php echo $breadcrumb['text']; ?></li>
-                        <?php } ?>
-                    <?php } ?>
-                </ul>
-        </nav>
-       
- 
-      <h1><?php echo $heading_title; ?></h1>
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" class="form-horizontal">
-        <fieldset>
-          <legend><?php echo $text_password; ?></legend>
-          <div class="form-group required">
-            <label class="col-sm-2 control-label" for="input-password"><?php echo $entry_password; ?></label>
-            <div class="col-sm-10">
-              <input type="password" name="password" value="<?php echo $password; ?>" placeholder="<?php echo $entry_password; ?>" id="input-password" class="form-control" />
-              <?php if ($error_password) { ?>
-              <div class="text-danger"><?php echo $error_password; ?></div>
-              <?php } ?>
-            </div>
-          </div>
-          <div class="form-group required">
-            <label class="col-sm-2 control-label" for="input-confirm"><?php echo $entry_confirm; ?></label>
-            <div class="col-sm-10">
-              <input type="password" name="confirm" value="<?php echo $confirm; ?>" placeholder="<?php echo $entry_confirm; ?>" id="input-confirm" class="form-control" />
-              <?php if ($error_confirm) { ?>
-              <div class="text-danger"><?php echo $error_confirm; ?></div>
-              <?php } ?>
-            </div>
-          </div>
-        </fieldset>
-        <div class="buttons clearfix">
-          <div class="pull-left"><a href="<?php echo $back; ?>" class="btn btn-default"><?php echo $button_back; ?></a></div>
-          <div class="pull-right">
-            <input type="submit" value="<?php echo $button_continue; ?>" class="btn btn-primary" />
-          </div>
-        </div>
-      </form>
-      <?php echo $content_bottom; ?>
+		<div class="clr"></div>
+		<div class="globalWrapper">
+			<div class="wrapper">
+
+					<div class="pag-2">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li>&#187;</li>
+							<li class="active"><a href="#"><?php echo $text_account; ?></a></li>
+						</ul>
+					</div>
+				<div class="clr"></div>
+				<div class="cont">
+					<div class="cont-tit"><?php echo $heading_title; ?></div>
+						<div class="prof-menu-wrapper tabs_holder">
+							<img src="catalog/view/theme/bardahl_new/img/profile-menu.png">
+							<ul class="profile-menu">
+								<!-- Нужно потом вынести меню в отдельный модуль -->
+								<li class="tab_selected"><a href="<?php echo $edit; ?>">Основные данные</a></li>
+								<li><a href="<?php echo $edit_password; ?>">Сменить пароль</a></li>
+								<li><a href="<?php echo $reward; ?>">Бонусы</a></li>
+								<li><a href="<?php echo $order; ?>">История покупок</a></li>
+								<li><a href="<?php echo $logout; ?>">Выйти</a></li>
+							</ul>
+						</div>
+						<div id="profile-main" class="right-cont-wrapper">
+							<form name="test" method="post" action="<?php echo $action; ?>" enctype="multipart/form-data">
+								<div class="prof-col">
+									<div class="prof-tit"><?php echo $text_password; ?></div>
+									<div class="input-wrapper">
+										<span><?php echo $entry_password; ?>*</span>
+										<input type="text" required="required">
+									</div>
+									<div class="input-wrapper">
+										<span><?php echo $entry_confirm; ?>*</span>
+										<input type="text" required="required">
+									</div>
+
+									<div class="mail-img"><img src="catalog/view/theme/bardahl_new/img/mail.png"></div>
+									<div class="clr"></div>
+									<input type="submit" value="">
+								</div>
+							</form>
+						</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+<?php echo $content_bottom; ?>
     </div>
 </div>
 <?php echo $footer; ?>
