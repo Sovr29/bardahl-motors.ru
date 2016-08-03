@@ -6,11 +6,15 @@
         <div id="hitsOwl" class="owl-carousel owl-theme">
         	<?php foreach ($products as $product) { ?>
 				<div class="hitItem">
-                    <div class="hitImg"><img width="127" height="127" src="<?php echo $product['thumb']; ?>" alt=""></div>
-                    <a href='<?php echo $product['href']; ?>'><span class="hitTitle"><?php echo $product['name']; ?></span></a>
-                    <span class="hitInfo"><span style="color:#de2c18;">3120</span> <span style="text-decoration:underline;"><?php echo $product['description']; ?></span></span>
-                    <span  class="hitPrice"><?php echo $product['price']; ?></span>
-                    <a href="#add-to-box" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo 1 ?>');" class="hitBtn btn-primary add-box" >КУПИТЬ</a>
+					<div class="hitContent">
+                    	<div class="hitImg"><img width="127" height="127" src="<?php echo $product['thumb']; ?>" alt=""></div>
+                   	 	<a href='<?php echo $product['href']; ?>'><span class="hitTitle"><?php echo $product['name']; ?></span></a>
+                    	<span class="hitInfo"><span style="color:#de2c18;">3120</span> <span style="text-decoration:underline;"><?php echo $product['description']; ?></span></span>
+                    </div>
+                    <div class="hitFooter">
+	                    <span  class="hitPrice"><?php echo $product['price']; ?></span>
+	                    <a href="#add-to-box" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo 1 ?>');" class="hitBtn btn-primary add-box" >КУПИТЬ</a>
+                	</div>
                 </div>
         	 <?php } ?>
          </div>

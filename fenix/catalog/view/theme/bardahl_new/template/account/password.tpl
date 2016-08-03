@@ -20,8 +20,8 @@
 							<img src="catalog/view/theme/bardahl_new/img/profile-menu.png">
 							<ul class="profile-menu">
 								<!-- Нужно потом вынести меню в отдельный модуль -->
-								<li class="tab_selected"><a href="<?php echo $edit; ?>">Основные данные</a></li>
-								<li><a href="<?php echo $edit_password; ?>">Сменить пароль</a></li>
+								<li><a href="<?php echo $edit; ?>">Основные данные</a></li>
+								<li class="tab_selected"><a href="<?php echo $edit_password; ?>">Сменить пароль</a></li>
 								<li><a href="<?php echo $reward; ?>">Бонусы</a></li>
 								<li><a href="<?php echo $order; ?>">История покупок</a></li>
 								<li><a href="<?php echo $logout; ?>">Выйти</a></li>
@@ -29,7 +29,7 @@
 						</div>
 						<div id="profile-main" class="right-cont-wrapper">
 							<form name="test" method="post" action="<?php echo $action; ?>" enctype="multipart/form-data">
-								<div class="prof-col">
+								<div class="prof-col" style="width: 431px;">
 									<div class="prof-tit"><?php echo $text_password; ?></div>
 									<div class="input-wrapper">
 										<span><?php echo $entry_password; ?>*</span>

@@ -51,7 +51,7 @@ class ControllerAccountAccount extends Controller {
 		$data['text_newsletter'] = $this->language->get('text_newsletter');
 		$data['text_recurring'] = $this->language->get('text_recurring');
 
-		$data['edit'] = $this->url->link('account/edit', '', 'SSL');
+		$data['edit'] = $this->url->link('account/account', '', 'SSL');
 		$data['password'] = $this->url->link('account/password', '', 'SSL');
 		$data['address'] = $this->url->link('account/address', '', 'SSL');
 		$data['wishlist'] = $this->url->link('account/wishlist');

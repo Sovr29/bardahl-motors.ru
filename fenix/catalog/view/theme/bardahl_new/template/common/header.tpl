@@ -115,6 +115,6 @@
                		</li>
                 <?php } ?>
             </ul>
-            <a class="profileLink" href="#"><img src="catalog/view/theme/bardahl_new/img/profile.png" alt=""></a>
+            <a class="profileLink" href="/my-account"><img src="catalog/view/theme/bardahl_new/img/profile.png" alt=""></a>
         </div>
     </div>

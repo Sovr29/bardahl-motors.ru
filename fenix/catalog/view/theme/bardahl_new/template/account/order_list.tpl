@@ -19,10 +19,10 @@
 					<img src="catalog/view/theme/bardahl_new/img/profile-menu.png">
 					<ul class="profile-menu">
 						<!-- Нужно потом вынести меню в отдельный модуль -->
-						<li class="tab_selected"><a href="<?php echo $edit; ?>">Основные данные</a></li>
+						<li><a href="<?php echo $edit; ?>">Основные данные</a></li>
 						<li><a href="<?php echo $edit_password; ?>">Сменить пароль</a></li>
 						<li><a href="<?php echo $reward; ?>">Бонусы</a></li>
-						<li><a href="<?php echo $order; ?>">История покупок</a></li>
+						<li class="tab_selected"><a href="<?php echo $order; ?>">История покупок</a></li>
 						<li><a href="<?php echo $logout; ?>">Выйти</a></li>
 					</ul>
 				</div>

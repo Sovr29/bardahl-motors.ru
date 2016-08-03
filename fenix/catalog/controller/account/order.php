@@ -53,7 +53,7 @@ class ControllerAccountOrder extends Controller {
 		$data['button_view'] = $this->language->get('button_view');
 		$data['button_continue'] = $this->language->get('button_continue');
 
-		$data['edit'] = $this->url->link('account/edit', '', 'SSL');
+		$data['edit'] = $this->url->link('account/account', '', 'SSL');
 		$data['edit_password'] = $this->url->link('account/password', '', 'SSL');
 		$data['order'] = $this->url->link('account/order', '', 'SSL');
 		$data['logout'] = $this->url->link('account/logout', '', 'SSL');

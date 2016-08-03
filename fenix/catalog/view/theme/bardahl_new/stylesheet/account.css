@@ -1,0 +1,204 @@
+/*================== Account Page ======================*/
+body, code, dl, dd, form, pre {
+    margin: 0;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: OpenSans-Regular,Myriad Pro,sans-serif;
+    font-weight: normal;
+}
+body {
+    background-color: #fff;
+    color: #161616;
+    font-family: OpenSans-Regular,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0;
+    width: 100%;
+}
+
+address, blockquote, h1, h2, h3, h4, h5, h6, fieldset, p, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #161616;
+    text-decoration: none;
+}
+
+ul li {
+    font: 16px/1.5 OpenSans-Regular;
+}
+
+.globalWrapper {
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 1225px;
+    overflow: hidden;
+    position: relative;
+}
+
+.wrapper {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 1225px;
+}
+
+.pag-2 {
+    margin: 70px 0 0;
+}
+
+
+.pag-2 ul li {
+    float: left;
+    list-style: outside none none;
+    padding: 0 2px;
+}
+
+.pag-2 ul li a {
+    color: #212121;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.cont {
+    border: 1px solid #c2c2c2;
+    margin: 10px 0;
+    min-height: 585px;
+    padding: 0 0 15px;
+}
+
+.cont-tit {
+    color: #000000;
+    font: 38px OpenSans-Bold;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.prof-menu-wrapper {
+    border: 1px solid #c2c2c2;
+    float: left;
+    height: 360px;
+    margin: 20px 0 0 70px;
+    width: 280px;
+}
+
+.prof-menu-wrapper img {
+    display: block;
+    margin: 20px auto;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+ul.profile-menu {
+    margin: 0 auto;
+    width: 190px;
+}
+
+
+ul.profile-menu li {
+    border-bottom: 1px solid #c2c2c2;
+    line-height: 35px;
+    list-style: outside none none;
+}
+
+.tab_selected a {
+    font-weight: bold !important;
+}
+
+.right-cont-wrapper {
+    float: right;
+    margin: 0 15px;
+    width: 840px;
+}
+
+.prof-col {
+    float: left;
+    padding: 0 10px;
+    width: 400px;
+}
+
+.prof-tit {
+    color: #cd0e0e;
+    font: 18px Roboto-Regular;
+    margin: 0 0 0 121px;
+}
+
+.input-wrapper {
+    float: right;
+    margin: 10px 0;
+}
+
+.prof-col span {
+    color: #000000;
+    font: 14px Roboto-Bold;
+    margin: 0 5px 0 0;
+}
+
+.prof-col input[type="text"] {
+    border: 1px solid #bebebe;
+    height: 28px;
+    padding: 0 5px;
+    width: 265px;
+}
+
+.input-wrapper-check {
+    float: right;
+    font: 12px Roboto-Bold;
+    margin: 5px 0;
+}
+
+.radio-but {
+    float: left;
+    margin: 0 0 0 22px;
+}
+
+.check-but {
+    font: 12px Roboto-Bold;
+    margin: 0 58px 0 0;
+}
+
+input, select, button {
+    overflow: visible;
+    vertical-align: middle;
+}
+
+.input-wrapper-select {
+    float: left;
+    margin: 5px 0 5px 89px;
+}
+
+option {
+    background: #f8f8f8 none repeat scroll 0 0;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font: 14px Roboto-Light;
+    outline: medium none;
+}
+
+.mail-img img {
+    display: block;
+    float: right;
+    margin: 50px 65px 20px 0;
+}
+
+
+.prof-col input[type="submit"] {
+    background: rgba(0, 0, 0, 0) url("../img/send-but.png") no-repeat scroll 0 0;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 47px;
+    margin: 0 50px 0 0;
+    outline: medium none;
+    width: 182px;
+}

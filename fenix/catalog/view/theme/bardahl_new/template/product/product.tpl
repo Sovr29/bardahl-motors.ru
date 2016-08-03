@@ -114,23 +114,27 @@ echo $header; ?>
                     	<?php foreach ($products as $product) {?>
                         <li class="similar-products__item">
                             <div class="similar-products__photo">
-                                <img src="<?php echo $product['thumb']; ?>" alt="">
+                                <img src="<?php echo $product['thumb']; ?>" alt="Нет фото">
                             </div>
-                            <div class="similar-products__name">
-                                <?php echo $product['name']; ?>
-                            </div>
-                            <div class="similar-products__descr">
-                                <?php echo $product['description']; ?>
-                            </div>
-                            <div class="similar-products__price"><?php echo $product['price']; ?></div>
-                            <form action="" method="post">
-                                <div class="similar-products__count">
-                                    <div class="similar-products__minus js-products-minus">-</div>
-                                    <input class="similar-products__num js-products-num" type="text" name="count" value="1">
-                                    <div class="similar-products__plus js-products-plus">+</div>
-                                </div>
-                                <button class="btn btn--min"><a href="#add-to-box" class="add-box">Купить</a></button>
-                            </form>
+                            <div class="similar-products__content">
+	                            <div class="similar-products__name">
+	                                <?php echo $product['name']; ?>
+	                            </div>
+	                            <div class="similar-products__descr">
+	                                <?php echo $product['description']; ?>
+	                            </div>
+	                        </div>
+	                        <div class="similar-products__footer">
+	                            <div class="similar-products__price"><?php echo $product['price']; ?></div>
+	                            <form action="" method="post">
+	                                <div class="similar-products__count">
+	                                    <div class="similar-products__minus js-products-minus">-</div>
+	                                    <input class="similar-products__num js-products-num" type="text" name="count" value="1">
+	                                    <div class="similar-products__plus js-products-plus">+</div>
+	                                </div>
+	                                <button class="btn btn--min"><a href="#add-to-box" class="add-box">Купить</a></button>
+	                            </form>
+	                    	</div>
                         </li>
                         <?php } ?>
                     </ul>
