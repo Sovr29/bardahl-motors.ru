@@ -1,4 +1,4 @@
-<!-- Страница каталога товаров products -->>
+<!-- Страница каталога товаров products -->
 <?php echo $header; ?>
 <div class="middle">
     <div class="c-container">

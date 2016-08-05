@@ -78,7 +78,7 @@
 			Адрес: ул. Брянская д. 32 с.6 <br>
 			Время работы: Пн - Пт 09:00-21:00 Сб - Вск 12:00-19:00</a></span>
 			<div class="phoneAndSocial">
-				<span style="font-size:18px;font-weight:500;"><a class="various" href="#call"><img style="margin: 4px;display:block;float:left" src="catalog/view/theme/bardahl_new/img/phone.png" alt=""><?php echo($city['phone'][""])?></a></span><br>
+				<span style="font-size:16px;font-weight:500;"><a class="various" href="#call"><img style="margin: 4px;display:block;float:left" src="catalog/view/theme/bardahl_new/img/phone.png" alt=""><?php echo($city['phone'][""])?></a></span><br>
 				<input class="searchInput" placeholder="Поиск..." type="text"><br>
 				<ul class="socialLinksHeader">
 					<li><a target="_blank" href="https://vk.com/bardahlmotor"><img width="26" src="catalog/view/theme/bardahl_new/img/vk.png" alt=""></a></li>

@@ -16,7 +16,7 @@ $(function(){
 /* === Tabs plugin ===================================== */
 (function($){       
   jQuery.fn.lightTabs = function(options){
-
+      
     var createTabs = function(){
       tabs = this;
       i = 0;
@@ -28,7 +28,7 @@ $(function(){
         $(tabs).children("ul").children("li").eq(i).addClass("active");
       }
                 
-      showPage(3);        
+      showPage(0);        
       
       $(tabs).children("ul").children("li").each(function(index, element){
         $(element).attr("data-page", i);
