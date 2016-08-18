@@ -1621,4 +1621,216 @@ a.nu {
     width: 1140px;
 }
 
-
+/*====================== Cart Page ===============================*/
+.cart_table{
+    margin: 40px auto;
+    width: 100%;
+    text-transform: uppercase;
+}
+.tbl_title{
+    background-color: #000;
+}
+.cart_table td{
+    padding: 15px;
+    vertical-align: middle; 
+    border-bottom: 1px solid #000;
+}
+.cart_table td:first-child{
+    padding-left: 0;
+}
+.tbl_title td{    
+    color: #fff;    
+    font: 11px Roboto-Regular; 
+}
+.tbl_title td:first-child{
+    text-align: center;
+}
+.remove{
+    float: left;
+    margin-top: 45px;
+}
+.remove:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.cart_foto{
+    float: right;
+    width: 50px;
+    border: 1px solid #000;
+    padding: 10px 15px;
+}
+.tbl_cat{
+    color: #ccc;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.tbl_price{
+    font-size: 18px;
+    font-weight: bold;
+}
+.cart_table td input{
+    width: 57px;
+    height: 42px;
+    text-align: center;
+    border: 1px solid #f2f2f2;
+    font: 14px Roboto-Regular;
+    float: left;
+}
+.tbl_box{
+    width: 165px;
+    height: 42px;
+    margin: 0 auto;
+}
+.tbl_minus{
+    float: left;
+    text-align: center;
+}
+.tbl_plus{
+    float: left;
+}
+.cart_table td span{
+    display: block;
+    width: 42px;
+    height: 34px;
+    text-align: center;
+    border: 1px solid #f2f2f2;
+    font: 14px Roboto-Regular;
+    padding-top: 10px;
+}
+.cart_table td span:hover{
+    cursor: pointer;
+    color: #de2c18;
+    border-color: #de2c18;
+    
+}
+.cont_order {
+    border: 1px solid #c2c2c2;
+    border-top: none;
+    min-height: 310px;
+    padding: 40px;
+    background-color: #f6f6f6;
+    
+}
+.cont_order p{
+    margin: 0;
+}
+.cont_order input:focus, .cont_order textarea:focus{
+    color: #000;
+}
+.info-left{
+    float:left;
+    width: 530px;
+}
+p.info-title{
+    font: 18px Roboto;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+.style-select{
+    width: 99%;
+    overflow: hidden;
+    border: 1px solid #c2c2c2;
+    background: url("../img/select.png") no-repeat right #fff;
+}
+.info-left select{
+    width: 542px;
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    background: transparent;
+}
+.info-left input:nth-child(even){
+    margin-left: 34px;
+}
+.info-left input{
+    margin-top: 15px;
+    padding: 5px;
+    font: 14px Roboto-Regular;
+    color: #ccc;
+    border: none;
+    width: 44%;
+}
+.info-left textarea{
+    margin-top: 15px;
+    padding: 5px;
+    font: 14px Roboto-Regular;
+    color: #ccc;
+    border: none;
+    width: 97%;
+    height: 140px;
+}
+.sum-right{
+    float: left;
+    margin-left: 30px;
+    width: 50%;
+}
+.sum_info{
+    width: 100%;
+    height: 15px;
+    background-color: #fff;
+    margin-bottom: 2px;
+    margin-right: 40px;
+    padding: 10px;
+    
+}
+.sum_left{
+    float: left;
+}
+.sum_right{
+    float: right;
+}
+.sum_right span{
+    color: #de2c18;
+}
+.submit{
+    margin-top: 20px;
+    background-color: #fff;
+    width: 590px;
+    height: 160px;
+}
+.submit input{
+    margin: 30px 0 20px 20px;
+    padding: 5px;
+    font: 14px Roboto-Regular;
+    color: #ccc;
+    border: 1px solid #c2c2c2;
+    border-radius: 4px 0 0 4px;
+    width: 392px;
+}
+.submit button, .continue, .ready{    
+    color: #fff;
+    text-transform: uppercase;
+    font: 12px Roboto;
+    font-weight: 800;
+}
+.submit button{
+    cursor: pointer;
+}
+.submit button[name="discount"]{
+    background-color: #de2c18;
+    width: 146px;    
+    border: 1px solid #de2c18;
+    border-radius: 0 4px 4px 0;
+    margin-left: -4px;
+    margin-top: 10px;
+    height: 30px;
+}
+.continue, .ready{
+    float: right;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 7px;
+    height: 23px;
+}
+.submit .continue{
+    width: 190px;
+    background-color: #000;
+    border: 1px solid #000;
+}
+.submit .ready{
+    width: 160px;
+    background-color: #ffc600;
+    border: 1px solid #ffc600;    
+    margin: 0 20px;
+}

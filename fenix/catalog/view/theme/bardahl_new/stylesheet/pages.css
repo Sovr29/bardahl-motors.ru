@@ -22,17 +22,6 @@ a {
     color: #161616;
 }
 
-.clr {
-    clear: both;
-}
-
-/*
-ul li {
-    list-style: disc inside;
-    font: 16px OpenSans-Regular;
-    line-height: 1.5;
-}
-*/
 .f-left {
     float: left !important;
 }
@@ -730,7 +719,7 @@ ul.third-choose li a {
 }
 
 .pag-2 {
-    margin: 70px 0px 0 0;
+    margin-top: 70px;
 }
 
 .pag-2 ul li {
@@ -738,10 +727,13 @@ ul.third-choose li a {
     list-style: none;
     padding: 0 2px;
 }
+.pag-2 ul li:last-child {
+    display: none;
+}
 
 .pag-2 ul li a {
     font-size: 14px;
-    text-decoration: underline;
+    text-decoration: none;
     color: #212121;
 }
 
@@ -2172,9 +2164,8 @@ a.oil-item-l-but {
 
 .cont-del {
     border: 1px solid #c2c2c2;
-    margin: 10px 0;
     padding: 0 40px;
-    min-height: 585px;
+    margin: 10px 0 0;
 }
 
 .del {
