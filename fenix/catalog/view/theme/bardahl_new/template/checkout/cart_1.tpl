@@ -1,127 +1,107 @@
 <?php echo $header; ?>
 <div class="c_middle">
     <?php echo $content_top; ?>
-<div class="cc-container">
-      <h1 id="header_title"><?php echo $heading_title; ?></h1>
-        <?php if ($attention) { ?>
-            <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $attention; ?>
-              <button type="button" class="close" data-dismiss="alert">&times;</button>
-            </div>
-        <?php } ?>
-        <?php if ($success) { ?>
-            <div class="alert alert-success"><i class="fa fa-check-circle"></i> <?php echo $success; ?>
-              <button type="button" class="close" data-dismiss="alert">&times;</button>
-            </div>
-        <?php } ?>
-        <?php if ($error_warning) { ?>
-            <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> <?php echo $error_warning; ?>
-              <button type="button" class="close" data-dismiss="alert">&times;</button>
-            </div>
-        <?php } ?>
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-        <div class="table-responsive">
-          <table class="table table-bordered cartTable">
-            <thead>
-              <tr>
-                <td class="text-center"><?php echo $column_image; ?></td>
-                <td class="text-center"><?php echo $column_name; ?></td>
-                <td class="text-center"><?php echo $column_quantity; ?></td>
-                <td class="text-right"><?php echo $column_price; ?></td>
-                <td class="text-right"><?php echo $column_total; ?></td>
-              </tr>
-            </thead>
-            <tbody>
-              <?php foreach ($products as $product) { ?>
-              <tr>
-                <td class="text-center image"><?php if ($product['thumb']) { ?>
-                  <a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-thumbnail" /></a>
-                  <?php } ?></td>
-                <td class="text-left"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
-                  <?php if (!$product['stock']) { ?>
-                  <span class="text-danger">***</span>
-                  <?php } ?>
-                  <?php if ($product['option']) { ?>
-                  <?php foreach ($product['option'] as $option) { ?>
-                  <br />
-                  <small><?php echo $option['name']; ?>: <?php echo $option['value']; ?></small>
-                  <?php } ?>
-                  <?php } ?>
-                  <?php if ($product['reward']) { ?>
-                  <br />
-                  <small><?php echo $product['reward']; ?></small>
-                  <?php } ?>
-                  <?php if ($product['recurring']) { ?>
-                  <br />
-                  <span class="label label-info"><?php echo $text_recurring_item; ?></span> <small><?php echo $product['recurring']; ?></small>
-                  <?php } ?></td>
-                <td class="text-center"><div class="input-group btn-block" style="max-width: 200px; margin:auto;">
-                        <?php
-                            $update_value = $product['quantity'] + 1;
-                            $remove_value = $product['quantity'] - 1;
-                        ?>
+	<div class="wrapper">
+		<div class="pag-2">
+			<ul>
+				<?php foreach($data['breadcrumbs'] as $breadcrumb) { ?>
+					<li><a href="<?php echo $breadcrumb ["href"]; ?>"><?php echo $breadcrumb ["text"]; ?></a></li>
+					<li>&#187;</li>
+				<?php } ?>
+			</ul>
+		</div>
+		<div class="clr"></div>
+		<div class="cont-del">
+			<div class="cont-tit"><?php echo $heading_title; ?></div>
+			<?php if ($attention) { ?>
+            	<div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $attention; ?>
+              		<button type="button" class="close" data-dismiss="alert">&times;</button>
+            	</div>
+        	<?php } ?>
+        	<?php if ($success) { ?>
+	            <div class="alert alert-success"><i class="fa fa-check-circle"></i> <?php echo $success; ?>
+	            	<button type="button" class="close" data-dismiss="alert">&times;</button>
+	            </div>
+       		 <?php } ?>
+       		 <?php if ($error_warning) { ?>
+	            <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> <?php echo $error_warning; ?>
+	             	<button type="button" class="close" data-dismiss="alert">&times;</button>
+	            </div>
+        	<?php } ?>
 
+			<div class="discount-wrp">
+                <table class="cart_table">
+                	<tr class="tbl_title">
+                        <td><?php echo $column_image; ?></td>
+                        <td><?php echo $column_name; ?></td>
+                        <td><?php echo $column_price; ?></td>
+                        <td><?php echo $column_quantity; ?></td>
+                        <td><?php echo $column_total; ?></td>
+                    </tr>
+                    <?php foreach ($products as $product) { ?>
+	                    <tr>
+	                        <td>
+	                            <img class="remove" onclick="cart.remove('<?php echo $product['key']; ?>');" src="catalog/view/theme/bardahl_new/img/remove.png" alt="" title="Удалить">
+	                            <?php if ($product['thumb']) { ?>
+	                            	<img class="cart_foto" src="<?php echo $product['thumb']; ?>" alt="Нет фото">
+	                            <?php } ?>
+	                        </td>
+	                        <td>
+	                            <p class="tbl_cat">Моторное масло</p>
+	                            <a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
+	                        </td>
+	                        <td class="tbl_price"><?php echo $product['price']; ?> ₽</td>
+	                        <td>
+	                           <div class="tbl_box">
+	                                <span class="tbl_minus">-</span>
+	                                <input type="text" value="<?php echo $product['quantity']; ?>">
+	                                <span class="tbl_plus">+</span>
+	                           </div>
+	                        </td>
+	                        <td class="tbl_price"><?php echo $product['total']; ?> ₽</td>
+	                    </tr>
+                    <?php } ?>
+                </table>
+			</div>
 
-                    <input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" class="form-control" />
-                    <span class="input-group-btn">
-                        <button type="button" data-toggle="tooltip" title="<?php echo $button_update; ?>" class="btn btn-primary" onclick="cart.custUpdate('<?php  echo $product['key']; ?>', '<?php echo $update_value;?>');">+</button>
-
-                        <?php
-                            if($product['quantity'] > 1){
-                                ?>
-                                <button type="button" data-toggle="tooltip" title="Вычесть единицу товара" class="btn btn-primary" onclick="cart.custUpdate('<?php  echo $product['key']; ?>', '<?php echo $remove_value;?>');">-</button>
-                                <?php
-                            }
-                            else{
-                            ?>
-                                <button type="button" data-toggle="tooltip" title="<?php  echo $button_remove; ?>" class="btn btn-danger" onclick="cart.remove('<?php echo $product['key']; ?>');"><i class="fa fa-times-circle"></i></button></span></div></td>
-                            <?php
-                            }
-                        ?>
-
-                    <!--<button type="submit" data-toggle="tooltip" title="<?php echo $button_update; ?>" class="btn btn-primary"><i class="fa fa-refresh"></i></button>-->
-                    <!--<button type="button" data-toggle="tooltip" title="<?php echo $button_remove; ?>" class="btn btn-danger" onclick="cart.remove('<?php echo $product['key']; ?>');"><i class="fa fa-times-circle"></i></button></span></div></td>-->
-                <td class="text-right"><?php echo $product['price']; ?> <i class="fa fa-rub"></i></td>
-                <td class="text-right"><?php echo $product['total']; ?> <i class="fa fa-rub"></i></td>
-              </tr>
-              <?php } ?>
-              <?php foreach ($vouchers as $vouchers) { ?>
-              <tr>
-                <td></td>
-                <td class="text-left"><?php echo $vouchers['description']; ?></td>
-                <td class="text-left"></td>
-                <td class="text-left"><div class="input-group btn-block" style="max-width: 200px;">
-                    <input type="text" name="" value="1" size="1" disabled="disabled" class="form-control" />
-                    <span class="input-group-btn"><button type="button" data-toggle="tooltip" title="<?php echo $button_remove; ?>" class="btn btn-danger" onclick="voucher.remove('<?php echo $vouchers['key']; ?>');"><i class="fa fa-times-circle"></i></button></span></div></td>
-                <td class="text-right"><?php echo $vouchers['amount']; ?></td>
-                <td class="text-right"><?php echo $vouchers['amount']; ?></td>
-              </tr>
-              <?php } ?>
-            </tbody>
-          </table>
-        </div>
-      </form>
-    <div class="row cartTotalPrice">
-        <div class="col-sm-4 col-sm-offset-8">
-          <table id="total" class="table table-bordered">
-            <?php foreach ($totals as $total) { ?>
-            <tr>
-                <?php if($total['show_possible_discount']){?>
-                  <td colspan="2" class="text-right success"><?php echo $total['title']; ?> <?php echo $total['text']; ?> <i class="fa fa-rub"></i></td>
-                <?php } else { ?>
-                    <td class="text-right"><strong><?php echo $total['title']; ?></strong></td>
-                    <td class="text-right"><?php echo $total['text']; ?> <i class="fa fa-rub"></i></td>
-                <?php } ?>
-            </tr>
-            <?php } ?>
-          </table>
-        </div>
-    </div>
-    <?php echo $shipping_method; ?>
-    <div class="buttonsChekout">
-     <a href="<?php echo $checkout; ?>" data-href="<?php echo $checkout; ?>" class="btnCheckout">Оформить заказ</a>
-     <a href="<?php echo $continue; ?>" class="btnBack"><?php echo $button_shopping; ?></a>
-    </div>
-  <?php echo $content_bottom; ?>
-</div>
+			<div class="clr"></div>
+		</div>
+		<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" class="cont_order">
+                <div class="info-left">
+                    <p class="info-title">Как вы хотите получить товар?</p>
+                    <div class="style-select">
+                        <select name="" id="">
+                            <option value="">Доставка курьером +500 ₽</option>
+                        </select>
+                    </div>
+                    <input type="text" placeholder="Город">
+                    <input type="text" placeholder="Улица">
+                    <input type="text" placeholder="Дом">
+                    <input type="text" placeholder="Квартира">
+                    <textarea name="comment" cols="30" rows="4" placeholder="Комментарий к адресу доставки"></textarea>
+                </div>
+                <div class="sum-right">
+                    <p class="info-title">Сумма заказа</p>
+                    <?php foreach ($totals as $total) { ?>
+	                    <div class="sum_info">
+	                        <p class="sum_left"><?php echo $total['title']; ?></p>
+	                        <p class="sum_right">
+	                        	<?php if ($total['title'] == 'Итого') { ?>
+	                        		<span><?php echo $total['text']; ?> ₽</span></p>
+	                        	<?php } else { ?>
+	                        		<?php echo $total['text']; ?> ₽</p>
+	                        	<?php } ?>
+	                    </div>
+					<?php } ?>
+                    <div class="submit">
+                        <input type="text" placeholder="Введите код...">
+                        <button name="discount">Купон на скидку</button><br>
+                        <a href="<?php echo $checkout; ?>" class="ready">Оформить заказ</a>
+                        <a href="<?php echo $continue; ?>" class="continue"><?php echo $button_shopping; ?></a>
+                    </div>
+                </div>
+		</form>
+	</div>
+  	<?php echo $content_bottom; ?>
 </div>
 <?php echo $footer; ?>

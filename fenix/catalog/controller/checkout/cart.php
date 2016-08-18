@@ -3,7 +3,9 @@ class ControllerCheckoutCart extends Controller {
 	public function index() {
 		$this->load->language('checkout/cart');
 
-                $this->document->setName($this->language->get('heading_title'));
+		$this->document->addStyle('catalog/view/theme/bardahl_new/stylesheet/pages.css');
+
+        $this->document->setName($this->language->get('heading_title'));
 		$this->document->setTitle($this->language->get('heading_title'));
 
 		$data['breadcrumbs'] = array();
@@ -239,7 +241,7 @@ class ControllerCheckoutCart extends Controller {
 			$data['voucher'] = $this->load->controller('checkout/voucher');
 			$data['reward'] = $this->load->controller('checkout/reward');
 			$data['shipping'] = $this->load->controller('checkout/shipping');
-                        $data['shipping_method'] = $this->load->controller('checkout/shipping_method');
+            $data['shipping_method'] = $this->load->controller('checkout/shipping_method');
 			$data['column_left'] = $this->load->controller('common/column_left');
 			$data['column_right'] = $this->load->controller('common/column_right');
 			$data['content_top'] = $this->load->controller('common/content_top');
