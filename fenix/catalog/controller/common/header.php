@@ -262,6 +262,7 @@ class ControllerCommonHeader extends Controller {
                 );
                 $data['city'] = $cities['msk'];
                 //играемся с геолокацией
+                /*
                 $geo_db = new \IP2Location\Database('./system/helper/databases/IP2LOCATION-LITE-DB5.BIN', \IP2Location\Database::FILE_IO);
                 if($geo_db)
                 {
@@ -302,6 +303,30 @@ class ControllerCommonHeader extends Controller {
                         $data['city'] = $cities['tula'];
                     }
                 }
+                */
+
+                // Подключаем SxGeo.php класс
+                include("Geo/SxGeo.php");
+                $SxGeo = new SxGeo('Geo/SxGeoCity.dat');
+                $ip = $_SERVER['REMOTE_ADDR'];
+                $geoData = $SxGeo->getCity($ip);
+                $city = $geoData["city"]["name_ru"];
+
+				switch ($city){
+					case 'Санкт-Петербург':
+						$data['city'] = $cities['spb'];
+						break;
+					case 'Воронеж':
+						$data['city'] = $cities['vrn'];
+						break;
+					case 'Тула':
+						$data['city'] = $cities['tula'];
+						break;
+					default:
+						$data['city'] = $cities['msk'];
+						break;
+				}
+
                 $keys = array_keys($data['city']['phone']);
                 shuffle($keys);
 
