@@ -137,7 +137,7 @@ ul.mainMenuList {
 .mainMenuList li a{
     color: #fff;
     float: left;
-    width: 305px;
+    width: 300px;
     margin-top: -16px;
     text-align: center;
     line-height: 30px;
@@ -228,7 +228,7 @@ ul.mainMenuList {
 
 .hitContent{
     box-sizing: border-box;
-    min-height: 225px;
+    min-height: 185px;
 }
 
 .hitImg {
@@ -331,7 +331,6 @@ ul.mainMenuList {
 
 .aboutText {
     width: 540px;
-    height: 290px;
     font-size: 18px;
     margin: 20px 0 0 30px;
     text-indent: 25px;

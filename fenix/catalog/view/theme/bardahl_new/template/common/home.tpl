@@ -7,10 +7,9 @@
             <span class="aboutHeader">О марке</span>
              <iframe class="aboutVideo" width="510" height="290" src="https://www.youtube.com/embed/majgwlI4oWU" frameborder="0" allowfullscreen></iframe>
             <p class="aboutText">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab culpa saepe sequi fugiat, animi in porro atque. Perferendis, et debitis corporis id, architecto, ea quod illo repellendus, dolor porro magnam. <br> Lorem
-				<a class="first-banner" href="#first-banner" style="text-transform: uppercase; color: red; font-weight: bold;">Первый баннер</a> adipisicing
-				<a class="first-banner" href="#second-banner" style="text-transform: uppercase; color: red; font-weight: bold;">Второй баннер</a> elit. Ab culpa saepe sequi fugiat, animi in porro atque. Perferendis, et debitis corporis id, architecto, ea quod illo repellendus, dolor porro magnam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab culpa saepe sequi fugiat, animi in porro atque. Perferendis, et debitis corporis id, architecto, ea quod illo repellendus, dolor porro magnam.
-            </p>
+				«Bardahl Motor» -- официальный дилер моторных масел и присадок Bardahl. Компания была основана в ноябре 2014 года. За это малое время мы прошли путь от маленького розничного интернет-магазина с реализацией товара с квартиры (о чем наверняка помнят наши первые клиенты, которым мы бесконечно благодарны). Теперь же наш магазин, расположенный в центре Москвы — это представительство крупнейшего розничного дилера на территории РФ и, в то же время, официального дистрибьютера. Имеем собственные представительства в Санкт-Петербурге, Воронеже, Туле, а также крепкие не только деловые, но и дружеские отношения с нашими партнерами в Махачкале, Нальчике, Челябинске, Новороссийске, Владикавказе, Ижевске и многих других городах России.
+				Залогом этого успеха являются те ценности, которые мы исповедуем с первого дня работы - это индивидуальный подход, ответственность, честность и открытость каждому нашему клиенту, вера в эксклюзивность и эффективность продукции Bardahl.
+			</p>
            <a class="aboutBtn" href="/products">ПОСМОТЕТЬ АССОРТИМЕНТ!</a>
         </div>
 
