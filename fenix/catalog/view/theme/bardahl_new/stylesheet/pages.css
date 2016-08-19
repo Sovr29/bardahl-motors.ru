@@ -502,28 +502,32 @@ ul.third-choose li a {
     float: right;
 }
 
-.pages {
+.pagination {
     font-size: 16px;
     color: #212121;
     width: 570px;
     text-align: center;
     float: left;
+    list-style-type: none;
 }
 
-.pages a {
+.pagination a {
     font-size: 16px;
     color: #212121;
     text-decoration: none;
     padding: 0 8px;
     border-radius: 4px;
 }
-
-.pages a.active {
+.pagination li {
+    display: inline-block;
+    min-width: 20px;
+}
+.pagination li.active {
     background: #d93b3b;
     color: #fff;
 }
 
-.pages a:hover {
+.pagination a:hover {
     background: #d93b3b;
     color: #fff;
 }
@@ -730,6 +734,9 @@ ul.third-choose li a {
 .pag-2 ul li:last-child {
     display: none;
 }
+.pag ul li:last-child {
+    display: none;
+}
 
 .pag-2 ul li a {
     font-size: 14px;
@@ -753,7 +760,6 @@ ul.third-choose li a {
 
 .pag ul li a {
     font-size: 14px;
-    text-decoration: underline;
     color: #212121;
 }
 

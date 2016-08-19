@@ -10,10 +10,9 @@
 					<div class="widg-head">Категории</div>
 					<div class="widg-content">
 						<ul class="cats">
-							<li><a href="#">Моторные масла</a></li>
-							<li><a href="#">Присадки</a></li>
-							<li><a href="#">Трансмиссионные масла</a></li>
-							<li><a href="#">Технические жидкости</a></li>
+							<?php foreach ($categories as $category) { ?>
+								<li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
+							<?php } ?>
 						</ul>
 					</div>
 				</div>
@@ -39,475 +38,81 @@
 					<div class="widg-head">Моторные масла</div>
 					<div class="widg-content">
 						<ul id="my-menu" class="main-choose">
-							<li>
-							<span class="main-choose-tit">Для автомобилей</span>
-								<ul  class="second-choose">
-									<li><label><input type="checkbox"/> XTC C60 (90)</label></li>
-									<li><label><input type="checkbox"/> XTC C60 (90)</label></li>
-									<li><label><input type="checkbox"/> XTC C60 (90)</label></li>
-									<li><label><input type="checkbox"/> XTC C60 (90)</label></li>
-								</ul>
-							</li>
-							<li>
-								<div class="main-choose-tit">Для мотоциклов</div>
-								<ul  class="third-choose">
-									<li><a href="#">2-х тактные двигатели</a></li>
-										<ul  class="second-choose">
-											<li><label><input type="checkbox"/> Подпункт</label></li>
-											<li><label><input type="checkbox"/> Подпункт</label></li>
-										</ul>
-									</li>
-									<li><a href="#">4-х тактные двигатели</a>
-										<ul  class="second-choose">
-											<li><label><input type="checkbox"/> Подпункт</label></li>
-											<li><label><input type="checkbox"/> Подпункт</label></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<div class="main-choose-tit">Для Грузовиков</div>
-								<ul  class="third-choose">
-									<li><a href="#">2-х тактные двигатели</a></li>
-										<ul  class="second-choose">
-											<li><label><input type="checkbox"/> Подпункт</label></li>
-											<li><label><input type="checkbox"/> Подпункт</label></li>
-										</ul>
-									</li>
-									<li><a href="#">4-х тактные двигатели</a>
-										<ul  class="second-choose">
-											<li><label><input type="checkbox"/> Подпункт</label></li>
-											<li><label><input type="checkbox"/> Подпункт</label></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
+							<?php foreach ($categories[0]['children'] as $child) {?>
+								<li>
+								<span class="main-choose-tit"><?php echo $child['name']; ?></span>
+									<ul  class="second-choose">
+										<li><label><input type="checkbox"/> XTC C60 (90)</label></li>
+										<li><label><input type="checkbox"/> XTC C60 (90)</label></li>
+										<li><label><input type="checkbox"/> XTC C60 (90)</label></li>
+										<li><label><input type="checkbox"/> XTC C60 (90)</label></li>
+									</ul>
+								</li>
+							<?php } ?>
 						</ul>
 					</div>
 				</div>
 				<span class="clr-filtr"><a href="#">Сбросить фильтр</a></span>
 				<div class="stocks">
 					<div class="stocks-tit">Акции</div>
-					<div class="stock">
-						<div class="stock-tit">Выгода на количестве - Легко!</div>
-						<img src="catalog/view/theme/bardahl_new/img/1.jpg">
-						<div class="stock-des">Только в начале апреля, покупать много - ВЫГОДНО! Да, это действительная выгода, не бонусы, а живые деньги!</div>
-						<div class="stock-time">Акция действует с 6 марта по 30 апреля 2016 г.</div>
-						<div class="stock-link"><a href="#">Узнать подробности</a></div>
-					</div>
-					<div class="stock">
-						<div class="stock-tit">Очистка системы кондиционирования здесь и сейчас!</div>
-						<img src="catalog/view/theme/bardahl_new/img/2.jpg">
-						<div class="stock-des">Удали причину неприятного запаха в салоне! твоего автомобиля</div>
-						<div class="stock-time">Акция действует с 4 по11 марта 2016 г.</div>
-						<div class="stock-link"><a href="#">Узнать подробности</a></div>
-					</div>
-					<div class="stock">
-						<div class="stock-tit">Bardahl. Будь лучшим во всем!</div>
-						<img src="catalog/view/theme/bardahl_new/img/3.jpg">
-						<div class="stock-des">Ограниченная акция на масло премиум-класса в Bardahl Motor!</div>
-						<div class="stock-time">Акция действует с 31 января по 31 февраля 2016 г.</div>
-						<div class="stock-link"><a href="#">Узнать подробности</a></div>
-					</div>
-					<div class="stock">
-						<div class="stock-tit">Дизельный заряд энергии!</div>
-						<img src="catalog/view/theme/bardahl_new/img/4.jpg">
-						<div class="stock-des">На пути к качественному топливу!</div>
-						<div class="stock-time">Акция действует с 9 по 31 января 2016 г.</div>
-						<div class="stock-link"><a href="#">Узнать подробности</a></div>
-					</div>
+					<?php for ($i = 0; $i < 4; $i++) { ?>
+						<div class="stock">
+							<div class="stock-tit"><?php echo $promotions[$i]['title']?></div>
+							<img src="<?php echo $promotions[$i]['image']?>">
+							<div class="stock-des"><?php echo $promotions[$i]['description']?></div>
+							<div class="stock-time">Акция действует с <?php echo $promotions[$i]['date_begin']?> по <?php echo $promotions[$i]['date_end']?></div>
+							<div class="stock-link"><a href="<?php echo $promotions[$i]['view']?>">Узнать подробности</a></div>
+						</div>
+					<?php } ?>
 				</div>
 			</div>
 			<div class="content">
 				<div class="pag">
 					<ul>
-					<li><a href="#">Главная</a></li>
-					<li>&#187;</li>
-					<li><a href="#">Каталог </a></li>
-					<li>&#187;</li>
-					<li><a href="#">Моторные масла</a></li>
+						<?php foreach ($breadcrumbs as $breadcrumb){ ?>
+							<li><a href="<?php echo $breadcrumb['href']?>"><?php echo $breadcrumb['text']?></a></li>
+							<li>&#187;</li>
+						<?php } ?>
 					</ul>
 				</div>
 				<div class="clr"></div>
 				<h1 class="catalog-tit">Купить масло Bardahl</h1>
 				<div class="calalog-opt">
 					<div class="sort">
-						Сортировать по:  <a href="#">названию</a> <a href="#">цене</a> <a href="#">популярности</a>
+						Сортировать по:
+						<?php foreach ($sorts as $sort) { ?>
+							<a href="<?php echo $sort['href']?>"><?php echo $sort['text']?></a>
+						<?php  } ?>
 					</div>
 					<div class="show">
 						Показать:  <a href="#">витриной</a> <a href="#">списком</a>
 					</div>
 				</div>
-				<div class="search-tit">Найдено товаров по вашему запросу: <span>145</span></div>
+				<div class="search-tit">Найдено товаров по вашему запросу: <span><?php echo count($products); ?></span></div>
 				<div class="items">
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
+					<?php for ($i = $offset; $i < $count; $i++) { ?>
+						<div class="item">
+							<img src="<?php echo $products[$i]['thumb']; ?>" alt="Нет фото">
+							<div class="item-name"><?php echo $products[$i]['name']; ?></div>
+							<div class="item-des"><?php echo $products[$i]['description']; ?></div>
+							<div class="sep"></div>
+							<div class="item-price-2">
+								<div class="pr"><?php echo $products[$i]['price']; ?> <span>&#8381;</span></div>
+							    <div class="number">
+	                             <input type="text" value="<?php echo $products[$i]['quantity']; ?>" />
+	                            </div>
+	                            <div class="clr">
+								</div>
 							</div>
+							<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
 						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
-					<div class="item">
-						<img src="catalog/view/theme/bardahl_new/img/item.jpg">
-						<div class="item-name">XTC C60 0W40 1 л.</div>
-						<div class="item-des">Для дизельных двигателей, бензиновых, с турбонаддувом, атмосферных и с непосредственным впрыском топлива.</div>
-						<div class="sep"></div>
-						<div class="item-price-2">
-							<div class="pr">1400 <span>&#8381;</span></div>
-						    <div class="number">
-                             <input type="text" value="1" />
-                            </div>
-                            <div class="clr">
-							</div>
-						</div>
-						<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
-					</div>
+					<?php } ?>
 				</div>
 				<div class="clr"></div>
 				<div class="bottom-pagination">
-					<div class="prev"><a href="">&#60; Предыдущая страница</a></div>
-					<div class="pages">
-						Страница  <a href="#" class="active">1</a></li> <a href="#">2</a>
-					</div>
-					<div class="ntx"><a href="">Следующая страница &#62;</a></div>
+					<div class="prev"><a href=""></a></div>
+					<?php echo $pagination; ?>
+					<div class="ntx"><a href=""></a></div>
 				</div>
 				<div class="clr"></div>
 				<div class="bottom-text">

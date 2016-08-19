@@ -333,18 +333,6 @@ $(document).ready(function () {
     });
 });//end ready
 
-/*
-$(window).load(function () {
-
-    $('.slide-main').flexslider({
-        animation: "slide",
-        slideshowSpeed: 9000,
-        useCSS: false
-    });
-
-});
-*/
-
 //Plugin placeholder
 (function (b) {
     function d(a) {
@@ -504,7 +492,36 @@ $(document).ready(function () {
             location = url;
         }
     });
-
+    
+    //Pagination
+    $(".pagination li a").each(function(){
+        if ($(this).text() == '|<'){
+            $(this).remove();
+        }  
+        if ($(this).text() == '<'){
+            var href = $(this).attr('href');
+            $(".prev a").attr('href', href); 
+            $(".prev a").text('< Предыдущая страница');
+            $(this).remove();
+            
+        }
+        if ($(this).text() == '>|'){
+            $(this).remove();
+        }
+        if ($(this).text() == '>'){
+            var href = $(this).attr('href');
+            $(".ntx a").attr('href', href); 
+            $(".ntx a").text('Следующая страница >');
+            $(this).remove();
+        }
+    });
+/*
+    if ($(".pagination li a").eq(0).text() == '>|'){
+        var href = $(".pagination li a").eq(0).attr('href');
+        $(".ntx a").attr('href', href); 
+        $(".pagination li a").eq(0).remove();
+    }
+*/
     // Menu
     $('#menu .dropdown-menu').each(function () {
         var menu = $('#menu').offset();
