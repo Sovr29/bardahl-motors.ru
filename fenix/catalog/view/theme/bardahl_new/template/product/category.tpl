@@ -93,7 +93,7 @@
 					<?php for ($i = $offset; $i < $count; $i++) { ?>
 						<div class="item">
 							<img src="<?php echo $products[$i]['thumb']; ?>" alt="Нет фото">
-							<div class="item-name"><?php echo $products[$i]['name']; ?></div>
+							<div class="item-name"><a href="<?php echo $products[$i]['href']; ?>"><?php echo $products[$i]['name']; ?></a>></div>
 							<div class="item-des"><?php echo $products[$i]['description']; ?></div>
 							<div class="sep"></div>
 							<div class="item-price-2">
@@ -104,7 +104,7 @@
 	                            <div class="clr">
 								</div>
 							</div>
-							<div class="item-buy"><a href="#add-to-box" class="add-box">Купить</a></div>
+							<div class="item-buy"><a href="#add-to-box" onclick="cart.add('<?php echo $products[$i]['product_id']; ?>', '<?php echo 1 ?>');" class="add-box">Купить</a></div>
 						</div>
 					<?php } ?>
 				</div>

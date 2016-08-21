@@ -91,13 +91,14 @@
     <script type="text/javascript" src="catalog/view/theme/bardahl_new/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 
     <script type="text/javascript" src="catalog/view/theme/bardahl_new/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script>
 
 	<!-- Carousel Custom-->>
     <script src="catalog/view/theme/bardahl_new/js/script.js"></script>
 
 	<script type='text/javascript' src='catalog/view/theme/bardahl_new/js/SmoothScroll.js'></script>
 	<script type="text/javascript" src="catalog/view/theme/bardahl_new/js/main.js"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script>
+
 	<!-- Табы не работают
 	<script type="text/javascript" src="http://onlinehtmltools.com/tab-generator/skinable_tabs.min.js"></script>
 	<script type="text/javascript">

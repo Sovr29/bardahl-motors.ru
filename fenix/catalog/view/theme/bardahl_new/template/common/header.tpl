@@ -23,7 +23,7 @@
     <!-- Default Theme -->
     <link rel="stylesheet" href="catalog/view/theme/bardahl_new/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
     <link rel="stylesheet" href="catalog/view/theme/bardahl_new/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-
+	<link rel="stylesheet" href="catalog/view/theme/bardahl_new/stylesheet/jquery-ui-1.8.19.custom.css">
     <!-- Bootstrap CSS
     <link rel="stylesheet" href="catalog/view/javascript/bootstrap/css/bootstrap.min.css">
 	 -->
@@ -38,6 +38,7 @@
     <!--  jQuery -->
     <script src="catalog/view/theme/bardahl_new/script/jquery.js"></script>
 	<script type="text/javascript" src="catalog/view/theme/bardahl_new/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="catalog/view/theme/bardahl_new/js/jquery-ui-1.8.19.custom.min.js"></script>
 
 	<!-- Bootstrap JS
 	<script type="text/javascript" src="catalog/view/javascript/bootstrap/js/bootstrap.min.js"></script>
