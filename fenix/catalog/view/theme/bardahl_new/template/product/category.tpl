@@ -35,23 +35,23 @@
 					</div>
 				</div>
 				<div class="widg">
-					<div class="widg-head">Моторные масла</div>
+					<div class="widg-head"><?php echo $heading_title; ?></div>
 					<div class="widg-content">
 						<ul id="my-menu" class="main-choose">
-							<?php foreach ($categories[0]['children'] as $child) {?>
+							<?php foreach ($types as $key => $type) {?>
 								<li>
-								<span class="main-choose-tit"><?php echo $child['name']; ?></span>
+								<span class="main-choose-tit"><?php echo $key; ?></span>
 									<ul  class="second-choose">
-										<li><label><input type="checkbox"/> XTC C60 (90)</label></li>
-										<li><label><input type="checkbox"/> XTC C60 (90)</label></li>
-										<li><label><input type="checkbox"/> XTC C60 (90)</label></li>
-										<li><label><input type="checkbox"/> XTC C60 (90)</label></li>
+										<?php foreach($type as $child) { ?>
+											<li><label><input type="checkbox"/><?php echo $child['type_name']; ?>)</label></li>
+										<?php } ?>
 									</ul>
 								</li>
 							<?php } ?>
 						</ul>
 					</div>
 				</div>
+				<span class="clr-filtr"><a href="#">Применить фильтр</a></span>
 				<span class="clr-filtr"><a href="#">Сбросить фильтр</a></span>
 				<div class="stocks">
 					<div class="stocks-tit">Акции</div>

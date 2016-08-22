@@ -215,7 +215,11 @@ class ControllerProductCategory extends Controller {
 				);
 				//}
 			}
-
+/*
+			echo "<pre>";
+			var_dump($data['categories']);
+			echo "</pre>";
+*/
 			$data['products'] = array();
 
 			$filter_data = array(
@@ -259,10 +263,20 @@ class ControllerProductCategory extends Controller {
 					$rating = false;
 				}
 
+				/*
+				//Проверяем уникальность типа товаров
+				if (!in_array($result['type_id'], $type_id)){
+					$type_id[] =  $result['type_id'];
 
+					$typetmp = $this->model_catalog_product_type->getType($result['type_id']);
 
-				$typetmp = $this->model_catalog_product_type->getType($result['type_id']);
-				$typetmp['description'] = html_entity_decode($typetmp['description'], ENT_QUOTES, 'UTF-8');
+					$data['typetmps'][] = array(
+							'type_id'	=>	$typetmp['type_id'],
+							'name'	=>	$typetmp['name'],
+							'description'	=>	 html_entity_decode($typetmp['description'], ENT_QUOTES, 'UTF-8')
+					);
+				}
+				*/
 
 				$data['products'][] = array(
 					'product_id'  => $result['product_id'],
@@ -278,9 +292,35 @@ class ControllerProductCategory extends Controller {
 					'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
 					'rating'      => $result['rating'],
 					'href'        => $this->url->link('product/product', 'path=' . $this->request->get['path'] . '&product_id=' . $result['product_id'] . $url)
+
 				);
 			}
 
+			$types = $this->model_catalog_product_type->getTypesFiltred($category_id);
+
+			//Форматируем массив
+			foreach ($types as $type){
+				$cat_names[] = $type['cat_name'];
+			}
+
+			$cat_names = array_values(array_unique($cat_names));
+
+			foreach ($cat_names as $cat_name){
+				$name = $cat_name;
+				foreach ($types as $type){
+					if ($type['cat_name'] == $name){
+						$data['types'][$name][] = array(
+							'type_name'	=>	$type['type_name'],
+							'type_id'	=>	$type['type_id']
+						);
+					}
+				}
+			}
+/*
+			echo "<pre>";
+				var_dump($data['types']);
+			echo "</pre>";
+*/
 			$url = '';
 
 			if (isset($this->request->get['filter'])) {
@@ -359,11 +399,6 @@ class ControllerProductCategory extends Controller {
 			);
 			*/
 
-/*
-			echo "<pre>";
-				var_dump($data['sorts']);
-			echo "/<pre>";
-*/
 			//Линки на лимиты
 			$data['limits'] = array();
 
