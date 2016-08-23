@@ -22,10 +22,10 @@
 					<div id="options" class="widg-content">
 						<form>
 							<label for="price">От
-								<input type="text" name="price" id="price">
+								<input type="text" name="lowprice" id="price">
 							</label>
 							<label for="price2">До
-								<input type="text" name="price2" id="price2">
+								<input type="text" name="hiprice" id="price2">
 							</label>
 						</form>
 						<div id="slider_price"></div>
@@ -43,7 +43,7 @@
 								<span class="main-choose-tit"><?php echo $key; ?></span>
 									<ul  class="second-choose">
 										<?php foreach($type as $child) { ?>
-											<li><label><input type="checkbox"/><?php echo $child['type_name']; ?>)</label></li>
+											<li><label><input type="checkbox"/><?php echo $child['type_name']; ?></label></li>
 										<?php } ?>
 									</ul>
 								</li>
@@ -99,7 +99,7 @@
 							<div class="item-price-2">
 								<div class="pr"><?php echo $products[$i]['price']; ?> <span>&#8381;</span></div>
 							    <div class="number">
-	                             <input type="text" value="<?php echo $products[$i]['quantity']; ?>" />
+	                             <input type="text" value="0" />
 	                            </div>
 	                            <div class="clr">
 								</div>

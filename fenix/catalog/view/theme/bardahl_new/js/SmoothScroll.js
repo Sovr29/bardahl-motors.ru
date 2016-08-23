@@ -776,15 +776,16 @@ $(document).ready(function(){
 
 
 
-$(document).ready(function(){						   	
+$(document).ready(function(){
     $('#shopBucket').toggle(
       function(){
         $('.box-list').slideDown(405);
       },
-	  function(){
+      function(){
         $('.box-list').slideUp(405);
      }
-   );
+    );
+
 });
 
 

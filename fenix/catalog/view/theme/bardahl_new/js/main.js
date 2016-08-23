@@ -700,7 +700,7 @@ var cart = {
                 if (getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') {
                     location = 'index.php?route=checkout/cart';
                 } else {
-                    $('.box-list').load('index.php?route=common/cart/info .box-list');
+                    $('.box-list').load('index.php?route=common/cart/info .inbox-list');
                 }
                 
             }
